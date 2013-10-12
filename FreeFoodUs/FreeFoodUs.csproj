@@ -169,11 +169,14 @@
     <Content Include="font\socialico-webfont-webfont.eot" />
     <Content Include="font\socialico-webfont-webfont.ttf" />
     <Content Include="font\socialico-webfont-webfont.woff" />
-    <Content Include="data\foods.json" />
+    <Content Include="data\foods.js" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="img\logo%402x.png" />
+    <Content Include="Scripts\hogan-2.0.0.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\typeahead.js" />
+    <Content Include="Scripts\typeahead.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

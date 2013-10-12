@@ -6,14 +6,15 @@
 <h2>Donate Food</h2>
 <div>
     <input style="width: 90px; display: initial" type="number" id="item_quantity" value="1" min="1" max="999"/>
-    <input style="width: 30%; display: initial" type="text" id="item_name" placeholder="Item name..." />
+    <input style="display: initial" type="text" id="item_name" placeholder="Item name..." />
     <input style="display: initial" type="button" id="add_item" disabled="disabled" value="Add" />
 </div>
 <table id="items_container"></table>
-
 <script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="~/Scripts/typeahead.js"></script>
+<script type="text/javascript" src="~/Scripts/hogan-2.0.0.js"></script>
 <script type="text/javascript">
-
+    
     function clearInput() {
         $("#item_name").val("");
         $("#item_quantity").val("1");
@@ -48,5 +49,15 @@
 
     $("#add_item").click(submit);
 
+    $('#item_name').typeahead({
+        name: 'Food',
+        remote: '../data/foods.js',
+        prefetch: '../data/foods.js',
+        limit: 5,
+        template: $("#item-template").html(),
+        engine: Hogan
+    });
+
 </script>
 <script type="text/html" id="row-template"><tr><td class="first"></td><td class="second"></td><td class="third"></td></tr></script>
+<script type="text/html" id="item-template"><div><div>{{Group}}</div><div>{{value}}</div><div>{{SubGroup}}</div></div></script>
