@@ -68,7 +68,7 @@
         validateSubmit();
     }
 
-    $("#item_name").change(function () {
+    $("#item_name").bind("propertychange keyup input paste", function () {
         if ($("#item_name").val().length === 0) {
             $("#add_item").attr('disabled', 'disabled');
         } else {
