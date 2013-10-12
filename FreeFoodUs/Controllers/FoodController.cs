@@ -6,16 +6,10 @@ using System.Web.Mvc;
 
 namespace FreeFoodUs.Controllers
 {
-    public class DonateController : Controller
+    public class FoodController : Controller
     {
         //
-        // GET: /Donate/
-
-        
-        public ActionResult Food()
-        {
-            return View();
-        }
+        // GET: /Food/
 
         public ActionResult Index()
         {

@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\DonateController.cs" />
+    <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -125,7 +126,6 @@
     <Content Include="css\font-awesome-ie7.css" />
     <Content Include="css\font-awesome.css" />
     <Content Include="css\full.css" />
-    <Content Include="css\index.html" />
     <Content Include="css\main.css" />
     <Content Include="css\normalize.min.css" />
     <Content Include="css\responsive.css" />
@@ -183,6 +183,8 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-2.0.3.min.map" />
+    <Content Include="Views\Donate\Index.cshtml" />
+    <Content Include="Views\Food\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
