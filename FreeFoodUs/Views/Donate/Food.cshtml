@@ -7,13 +7,25 @@
 <ul id="items_container"></ul>
 <input type="text" id="item_name" placeholder="Item name..." />
 <input type="number" id="item_quantity" value="1" />
-<input type="submit" id="add_item"/>
+<input type="submit" id="add_item" disabled="disabled"/>
 
 <script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
 <script type="text/javascript">
 
-    $("#add_item").click(function () {
-        $("#items_container").append('<li>' + $("#item_name").val() + ' - ' + $("#item_quantity").val() + '</li>');
+    function submit() {
+        $("#items_container").append('<li>' + $("#item_name").val() + ' - ' + $("#item_quantity").val() + '</li>').slideDown();
+        $("#item_name").val("");
+        $("#item_quantity").val("1");
+        $("#add_item").attr('disabled', 'disabled');
+    }
+
+    $("#item_name").change(function() {
+        if ($("#item_name").val().length === 0)
+            $("#add_item").attr('disabled', 'disabled');
+        else
+            $("#add_item").removeAttr('disabled');
     });
+    
+    $("#add_item").click(submit);
 
 </script>
