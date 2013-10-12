@@ -6,16 +6,21 @@
 <h2>Donate Food</h2>
 <div>
     <div style="float: left; margin-left: 5px; width: 90px;">
-        <input type="number" id="item_quantity" value="1" min="1" max="999" /></div>
+        <input type="number" id="item_quantity" value="1" min="1" max="999" />
+    </div>
     <div style="float: left; margin-left: 5px; width: 500px;">
-        <input style="width: 500px;" type="text" id="item_name" placeholder="Item name..." /></div>
+        <input style="width: 500px;" type="text" id="item_name" placeholder="Item name..." />
+    </div>
     <div style="float: left; margin-left: 5px;">
-        <input style="margin-top: 0" type="button" id="add_item" disabled="disabled" value="Add" /></div>
+        <input style="margin-top: 0" type="button" id="add_item" disabled="disabled" value="Add" />
+    </div>
 </div>
 <div id="items_container" style="clear: both;"></div>
 <div style="clear: both;">
-    <div><input style="margin-top: 0" type="button" id="submit_donations" disabled="disabled" value="Submit" /></div>
+
+    <input style="margin-top: 0" type="button" id="submit_donations" disabled="disabled" value="Submit" />
 </div>
+
 <script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
 <script type="text/javascript" src="~/Scripts/typeahead.js"></script>
 <script type="text/javascript" src="~/Scripts/hogan-2.0.0.js"></script>
@@ -78,14 +83,30 @@
 
     $(".remove-item").click(function () {
         $(this).remove();
-        validateSubmit();
     });
-
 
     $("#add_item").click(addItem);
 
-    $("#submit_donations").click(function() {
-        $("div.row").remove();
+    $("#submit_donations").click(function () {
+        $("#submit_donations").attr('disabled', 'disabled');
+        var donations = [];
+        $("#items_container").find(".row").each(function (index, el) {
+
+            donations.push({
+                Name: $(el).find('.second-column').text(),
+                Number: $(el).find('.first-column').text()
+            });
+        });
+        $.ajax({
+            type: "POST",
+            url: 'Submit',
+            data: JSON.stringify(donations),
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("div.row").remove();
+            },
+            dataType: "json"
+        });
     });
 
     var itemTemplate = $("#item-template").html();

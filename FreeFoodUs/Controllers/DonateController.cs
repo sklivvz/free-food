@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -26,6 +27,16 @@ namespace FreeFoodUs.Controllers
         public ActionResult Restaurants()
         {
             new FoodStock { Name = "bottles of beer", Number = 10 }.Upsert();
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Submit(List<FoodStock> donation)
+        {
+            foreach (var foodStock in donation)
+            {
+                foodStock.Upsert();
+            }
             return View();
         }
     }

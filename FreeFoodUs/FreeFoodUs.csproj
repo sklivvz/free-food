@@ -183,6 +183,7 @@
     <Content Include="Scripts\jquery-2.0.3.min.js" />
     <Content Include="Scripts\typeahead.js" />
     <Content Include="Scripts\typeahead.min.js" />
+
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -194,8 +195,9 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-2.0.3.min.map" />
-    <Content Include="Views\Donate\Index.cshtml" />
     <Content Include="Views\Food\Index.cshtml" />
+    <Content Include="Views\Donate\Index.cshtml" />
+    <Content Include="Views\Donate\Submit.cshtml" />
     <Content Include="Views\Donate\Restaurants.cshtml" />
   </ItemGroup>
   <ItemGroup>
