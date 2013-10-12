@@ -120,6 +120,16 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="css\boxed.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\font-awesome-ie7.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\full.css" />
+    <Content Include="css\index.html" />
+    <Content Include="css\main.css" />
+    <Content Include="css\normalize.min.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\switcher.css" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />

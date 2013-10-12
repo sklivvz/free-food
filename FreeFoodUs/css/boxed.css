@@ -1,0 +1,20 @@
+/* ==========================================================================
+   01. Responsive Options
+   ========================================================================== */
+   
+   
+/* Responsive Boxed Version  */
+body{ padding-top: 0; }
+.outter-wrapper{ max-width: 1440px; width: auto;}
+.wrapper { max-width: 1140px; width: auto;}
+.feature hr{ opacity: .4; }
+
+
+
+
+/* Responsive Full Width Version 
+body{ padding: 0em; }
+.outter-wrapper{ max-width: 100%; width: 100%;}
+.wrapper { max-width: 1140px; width: auto;}
+
+*/

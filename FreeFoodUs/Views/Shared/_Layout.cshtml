@@ -1,13 +1,115 @@
 ﻿<!DOCTYPE html>
-
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!-- Remove responsive.css is non-responsive needed -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    @*    <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>*@
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <!-- Start Main Navigation -->
+    <div class="outter-wrapper header-container">
+        <div class="wrapper">
+            <header class="clearfix">
+                <a href="index.html" class="logo">
+                    <img src="img/logo@2x.png" alt="Logo" /></a>
+                <nav id="nav-wrap">
+                    <ul class="nav" id="nav">
+                        <li class="nav-parent"><a class="active" href="index.html">Home</a>
+                            <ul>
+                                <li><a href="http://make-lemonade.co/themes/kause/church">Church Version</a></li>
+                                <li><a href="http://make-lemonade.co/themes/kause/political">Political Version</a></li>
+                                <li><a href="http://make-lemonade.co/themes/kause/charity">Charity Version</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent"><a href="about.html">Pages</a>
+                            <ul>
+                                <li><a href="about.html">Page With Sidebar</a>
+                                    <ul>
+                                        <li><a href="no-feature.html">Sidebar No Feature</a></li>
+                                        <li><a href="noside-nofeature.html">No Sidebar No Feature</a></li>
+                                        <li><a href="#">Third Level Example</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="full-width.html">Full Width</a></li>
+                                <li><a href="team.html">Team Page</a></li>
+                                <li><a href="faq.html">Knowledge Base</a></li>
+                                <li><a href="pricing.html">Donate</a></li>
+                                <li><a href="timeline.html">Timeline</a></li>
+                                <li><a href="results.html">Search Results</a></li>
+                                <li><a href="sitemap.html">Sitemap</a></li>
+                                <li><a href="404.html">404 Page</a></li>
+                                <li><a href="styles.html">Full Styles</a></li>
+                                <li><a href="widgets.html">Widget Styles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent"><a href="gallery.html">Galleries</a>
+                            <ul>
+                                <li><a href="gallery1.html">Gallery Style 1</a></li>
+                                <li><a href="gallery2.html">Gallery Style 2</a></li>
+                                <li><a href="gallery3.html">Gallery Style 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent"><a href="blog.html">Blog</a>
+                            <ul>
+                                <li><a href="blog.html">Full Width</a></li>
+                                <li><a href="blog-side.html">With Sidebar</a></li>
+                                <li><a href="post.html">Single Post Feature</a></li>
+                                <li><a href="post2.html">Single Post No Feature</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="last donate"><a href="pricing.html">Donate</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
     </div>
+    <!-- End Main Navigation -->
+    <!-- Start Outter Wrapper / Main Container / wrapper -->
+    <div class="outter-wrapper">
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <!-- Start Main Content -->
+                <div class="main-content">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Footer -->
+    <footer class="outter-wrapper feature">
+        <div class="wrapper">
+            <div class="clearfix">
+                <div class="foot right">
+                    <!-- Social Media icons -->
+                    <ul class="social-link">
+                        <li><a href="#"><em class="icon-facebook-sign"></em></a></li>
+                        <li><a href="#"><em class="icon-twitter-sign"></em></a></li>
+                        <li><a href="#"><em class="icon-tumblr-sign"></em></a></li>
+                        <li><a href="#"><em class="icon-google-plus-sign"></em></a></li>
+                    </ul>
+                </div>
+                <!-- Copyright Info -->
+                <div class="foot left">&copy; Copyright Kause 2013</div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 </body>
 </html>

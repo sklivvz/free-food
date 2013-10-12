@@ -1,0 +1,376 @@
+/* ==========================================================================
+   01. Responsive Options
+   ========================================================================== */
+   
+   
+/* Responsive Boxed Version  
+body{ padding-top: 0; }
+.outter-wrapper{ max-width: 1440px; width: auto;}
+.wrapper { max-width: 1140px; width: auto;}
+.feature hr{ opacity: .4; }
+*/
+
+
+
+/* Responsive Full Width Version */
+body{ padding: 0em; }
+.outter-wrapper{ max-width: 100%; width: 100%;}
+.wrapper { max-width: 1140px; width: auto;}
+
+
+
+
+/* ==========================================================================
+   02. Responsive Colors
+   ========================================================================== */   
+   
+/* Responsive Nav - Dark Grey */
+@media only screen and (max-width: 768px) { 
+	#nav, #menu-icon.active{
+		background: #282D36;
+	}
+	.widget-footer .widget{
+		border-color: #454c58;	
+	}
+}
+
+
+
+
+/* ==========================================================================
+   03. Media Queries 768
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+	body{
+		padding: 0;	
+	}
+	.logo{
+		padding-bottom: 1em;
+		padding-top: .6em;	
+	}
+	#nav{ 
+		display: none;
+	}
+	#nav-wrap {
+		position: relative;
+		padding-bottom: .4em;
+	}
+	#nav li.nav-parent{
+		padding-bottom: 0;
+	}
+	#menu-icon {
+		display: inline-block;
+		cursor: pointer;
+		padding: 10px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+	#menu-icon.active{
+		-webkit-border-radius: 3px 3px 0px 0px;
+		border-radius: 3px 3px 0px 0px;
+	}
+	nav #nav{
+		margin-top: 0;
+	}
+	#nav {
+		clear: both;
+		position: absolute;
+		top: 45px;
+		min-width: 160px;
+		z-index: 10000;
+		padding: 5px;
+		display: none; 
+		right: 0px;
+		-webkit-border-radius: 3px 0px 3px 3px;
+		border-radius: 3px 0px 3px 3px;
+	}
+	#nav li {
+		clear: both;
+		float: none;
+	}
+	#nav a, #nav ul a {
+		background: none;
+		display: inline;
+		padding: 0;
+		border: none;
+	}
+	#nav ul {
+		width: auto;
+		position: static;
+		display: block;
+		border: none;
+		background: inherit;
+		-webkit-box-shadow:  none;
+		box-shadow:  none;
+	}
+	#nav ul li a{
+		padding-left: 0;
+	}
+	#nav li{
+		padding: .2em 0!important;
+	}
+	#nav ul{
+		padding: 0!important;
+	}
+	#nav li > ul li{
+		padding-left: 12px!important;
+	}
+	#nav li > ul li:last-child{
+		padding-bottom: 0!important;
+	}
+	#nav li:hover ul ul{
+		display: block!important;
+		position: relative;
+		left: 0;
+		background: transparent;
+	}
+	#nav li:hover ul ul:before{
+		display: none;
+	}
+	.donate, #nav .donate a:hover{ 
+		background: transparent;
+	}
+	#masthead{
+		display: block;
+		height: 100%;
+	}
+	.header-container header{
+		padding: 10px 0 5px;
+	} 
+	.main-content, .right-aside{
+		width: 100%;
+		float: none;
+		border: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.main-container{
+		padding: 1px 0 30px;
+	}
+	.right-aside{
+		border-top: 1px solid #cad2d7;
+		margin-top: 25px; 
+	}
+	.third, .half, .fourth, .two-thirds, ol.icon-lists li, ul.flag-lists li, .three-fourths, .foot.left, .foot.right, input.half, input.full, .fifth, .two-fifths,
+	.three-fifths, .four-fifths{
+		width: 100%;
+		margin-right: 0%;
+		float: none;
+	}
+	.third, .half, .fourths, .two-third, .three-fourths{
+		margin-bottom: 30px;
+	}
+	.right-aside .half, .widget-footer .half, .clearfix.gallery .half, .clearfix.gallery .fourth{
+		width: 49%;
+		margin-right: 2%;
+		float: left;
+	}
+	.last-fold{
+		margin-right: 0!important;	
+	}
+	blockquote.third, blockquote.half, blockquote.fourths, blockquote.two-third{
+		width: 100%;
+	}
+	blockquote, blockquote.right, blockquote.left{
+		margin: 0;
+	}
+	ul.archive li{
+		min-width: 28%;
+	}
+	.foot.left, .foot.right{
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	ul.social-link li{
+		border: none;
+	}
+		
+	h6.tags.right, h6.date.left{
+		float: none!important;
+	}
+	ul.sitemap{
+		display: inline;
+		width: 100%;
+	}
+	ul.sitemap li{
+		display: block;
+		padding-left: 0;
+		padding: 1px;
+	}
+	.widget-footer .widget{
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-right: none;
+	}
+	.widget-footer .widget.last{
+		border: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.price-feature{
+		top: 0;
+	}
+	.icon-thirds li{
+		width: 48%;
+	}
+	.tab-nav {display: none;}
+	h3.v_nav {
+		height:45px;
+		line-height:45px;
+		margin: 0;
+		padding: 0;
+		text-align:center;
+		margin-top: 1px;
+		display: block;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		 -khtml-user-select: none;
+		   -moz-user-select: none;
+			-ms-user-select: none;
+				user-select: none;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;		
+		}
+		.tab-content-block {
+			clear:both;
+			position:relative;
+			width: 100%;
+			background: #fff;
+			border-style: solid;
+			border-width: 1px;
+		}
+		h3.v_nav:first-child {
+			margin-top: 0;
+		}
+		h3.v_active {
+			background: #FBFBFB;
+			z-index:50;
+		}
+		hr{
+			margin: 1.75em 0;
+		}
+		ul.timeline{
+			width: 98%;
+			padding-left: 2%;
+		}
+		ul.timeline > li{
+			width: 100%;
+			float: none!important;
+		}
+		.vert-line{
+			left: 1px;
+		}
+		ul.timeline > li:nth-child(2n+1):before{
+			border-color:#fff #e2e2e2 #fff #fff!important;
+			left: -14px;
+			right: 100%;
+		}
+ }
+ 
+
+
+
+
+/* ==========================================================================
+   04. Media Queries 600
+   ========================================================================== */
+@media only screen and (max-width: 600px) { 
+
+	.backstretch{
+		opacity: 0.2;
+	}
+	.cta.two-third{
+		width: 100%;
+		margin-right: 0%;
+		float: none;
+	}
+	.main table{ 
+		border-left: 1px solid #cad2d7;
+		border-right: 1px solid #cad2d7;
+		border-top: none;
+		border-bottom: none;
+	}
+	.feature-heading{
+		display: none;
+	}	
+}
+
+
+
+/* ==========================================================================
+   05. Media Queries 480
+   ========================================================================== */
+@media only screen and (max-width: 480px) { 
+	
+	 input[type=text],  input[type=email], input[type=password], textarea, a.btn, input[type=button], input[type=submit]{
+		padding: 10px 2%;
+		width: 96%;
+	}
+	a.btn, input[type=button]{
+		text-align: center;
+	}
+	a.small-btn{
+		font-size: 14px;
+		padding: .4em 2%;
+	}
+	a.xsmall-btn{
+		font-size: 12px;
+		padding: .2em 2%;
+	}
+	iframe{
+		max-height: 320px;
+	}
+	#menu-icon{
+		display: block!important;
+		padding-left: 3%!important;
+		padding-right: 3%!important;
+		width: 94%!important;
+	}
+	.header-container header{
+		text-align: center;
+	}
+	.logo{
+		float: none;
+	}
+	.header-container nav{
+		float: none;
+		
+	}
+	#nav{
+		padding-left: 3%!important;
+		padding-right: 3%!important;
+		width: 94%!important;
+		left: 0;
+	}
+	.hide-480{
+		display: none;
+	}
+	.thumb-gallery .third{
+		width: 100%;
+	}
+	.icon-thirds li{
+		width: 100%;
+		float: none;
+	}
+	ul.timeline > li:before, .vert-line{
+		display: none;
+	}
+	ul.timeline{
+		width: 100%;
+		padding-left: 0;
+	}
+}
+
+
+ 
+/* ==========================================================================
+   06. Media Queries 1140
+   ========================================================================== */  
+@media only screen and (max-width: 1140px) {
+	.wrapper { width: 100%; }
+}
