@@ -4,22 +4,22 @@
 }
 <link href="~/css/font-awesome.css" rel="stylesheet" />
 <h2>Donate Food</h2>
-<div>
-    <div style="float:left;margin-left:5px;"><input style="width: 90px; display: initial" type="number" id="item_quantity" value="1" min="1" max="999" /></div>
-    <div style="float:left;margin-left:5px;"><input type="text" style="width: 500px" id="item_name" placeholder="Item name..." /></div>
+<div >
+    <div style="float:left;margin-left:5px;width: 90px;"><input type="number" id="item_quantity" value="1" min="1" max="999" /></div>
+    <div style="float:left;margin-left:5px;width: 500px;"><input style="width: 500px;" type="text" id="item_name" placeholder="Item name..." /></div>
     <div style="float:left;margin-left:5px;"><input style="margin-top:0" type="button" id="add_item" disabled="disabled" value="Add" /></div>
 </div>
-<table id="items_container"></table>
+<div id="items_container" style="clear:both;"></div>
 <script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
 <script type="text/javascript" src="~/Scripts/typeahead.js"></script>
 <script type="text/javascript" src="~/Scripts/hogan-2.0.0.js"></script>
 
 <script type="text/html" id="row-template">
-    <tr>
-        <td class="first"></td>
-        <td class="second"></td>
-        <td class="third"></td>
-    </tr>
+    <div class="row" style="clear:both;font-family: RobotoCondensed;">
+        <div style="float:left;margin-left:5px;width: 90px;" class="first-column"></div>
+        <div style="float:left;margin-left:5px;width: 500px;" class="second-column"></div>
+        <div style="float:left;margin-left:5px;width: 90px;" class="third-column"></div>
+    </div>
 </script>
 <script type="text/html" id="item-template">
     <div style="background-color: white; width:500px;font-family: RobotoCondensed;">
@@ -40,14 +40,14 @@
     }
 
     function removeItem() {
-        $(this).parents("tr").remove();
+        $(this).parents("div.row").remove();
     }
 
     function submit() {
         var $tpl = $($("#row-template").html());
-        $tpl.find("td.first").append($("#item_quantity").val());
-        $tpl.find("td.second").append($("#item_name").val());
-        $tpl.find("td.third").append($("<i class='icon-remove-sign'></i>").click(removeItem));
+        $tpl.find(".first-column").append($("#item_quantity").val());
+        $tpl.find(".second-column").append($("#item_name").val());
+        $tpl.find(".third-column").append($("<div style='text-align:center'><i class='icon-remove-sign'></i><div>").click(removeItem));
         $("#items_container").append($tpl);
         clearInput();
     }
