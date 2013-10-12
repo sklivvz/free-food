@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Web;
 using Dapper;
 
 namespace FreeFoodUs.Models
@@ -15,18 +13,6 @@ namespace FreeFoodUs.Models
 
         public void Upsert()
         {
-            /*
-             
-             MERGE INTO Sales.SalesReason AS Target
-USING (VALUES ('Recommendation','Other'), ('Review', 'Marketing'), ('Internet', 'Promotion'))
-       AS Source (NewName, NewReasonType)
-ON Target.Name = Source.NewName
-WHEN MATCHED THEN
-	UPDATE SET ReasonType = Source.NewReasonType
-WHEN NOT MATCHED BY TARGET THEN
-	INSERT (Name, ReasonType) VALUES (NewName, NewReasonType)
-             */
-
             using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Main"].ConnectionString))
             {
                 connection.Execute(

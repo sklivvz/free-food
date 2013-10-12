@@ -20,9 +20,13 @@ namespace FreeFoodUs.Controllers
 
         public ActionResult Index()
         {
-            new FoodStock {Name = "bottles of beer", Number = 10}.Upsert();
             return View();
         }
 
+        public ActionResult Restaurants()
+        {
+            new FoodStock { Name = "bottles of beer", Number = 10 }.Upsert();
+            return View();
+        }
     }
 }
