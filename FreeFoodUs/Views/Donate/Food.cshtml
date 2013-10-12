@@ -4,17 +4,19 @@
 }
 <link href="~/css/font-awesome.css" rel="stylesheet" />
 <h2>Donate Food</h2>
-<div>
-    <input style="width: 90px; display: initial" type="number" id="item_quantity" value="1" min="1" max="999"/>
-    <input style="display: initial" type="text" id="item_name" placeholder="Item name..." />
-    <input style="display: initial" type="button" id="add_item" disabled="disabled" value="Add" />
-</div>
+<table>
+    <tr>
+        <td><input style="width: 90px; display: initial" type="number" id="item_quantity" value="1" min="1" max="999" /></td>
+        <td><input style="display: initial" class="typeahead" type="text" id="item_name" placeholder="Item name..." /></td>
+        <td><input style="display: initial" type="button" id="add_item" disabled="disabled" value="Add" /></td>
+    </tr>
+</table>
 <table id="items_container"></table>
 <script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
 <script type="text/javascript" src="~/Scripts/typeahead.js"></script>
 <script type="text/javascript" src="~/Scripts/hogan-2.0.0.js"></script>
 <script type="text/javascript">
-    
+
     function clearInput() {
         $("#item_name").val("");
         $("#item_quantity").val("1");
@@ -24,7 +26,7 @@
     function removeItem() {
         $(this).parents("tr").remove();
     }
-    
+
     function submit() {
         var $tpl = $($("#row-template").html());
         $tpl.find("td.first").append($("#item_quantity").val());
@@ -42,22 +44,34 @@
         }
     });
 
-    $(".remove-item").click(function() {
+    $(".remove-item").click(function () {
         $(this).remove();
     });
-    
+
 
     $("#add_item").click(submit);
 
+    var itemTemplate = $("#item-template").html();
     $('#item_name').typeahead({
         name: 'Food',
-        remote: '../data/foods.js',
         prefetch: '../data/foods.js',
-        limit: 5,
-        template: $("#item-template").html(),
+        //limit: 5,
+        template: itemTemplate,
         engine: Hogan
     });
 
 </script>
-<script type="text/html" id="row-template"><tr><td class="first"></td><td class="second"></td><td class="third"></td></tr></script>
-<script type="text/html" id="item-template"><div><div>{{Group}}</div><div>{{value}}</div><div>{{SubGroup}}</div></div></script>
+<script type="text/html" id="row-template">
+    <tr>
+        <td class="first"></td>
+        <td class="second"></td>
+        <td class="third"></td>
+    </tr>
+</script>
+<script type="text/html" id="item-template">
+    <div>
+        <div>{{Group}}</div>
+        <div>{{Food}}</div>
+        <div>{{SubGroup}}</div>
+    </div>
+</script>

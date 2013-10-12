@@ -2,7 +2,7 @@
    {
       "Group":"Produce Items",
       "SubGroup":"Fruits",
-      "Food":"Apples"
+      "Food": "Apples",
    },
    {
       "Group":"Produce Items",
