@@ -1243,6 +1243,10 @@ ol.graphs > li span{
 input[type=button], input[type=submit]{
 	padding: .6em 1.8em;
 }
+
+input[type=button]:disabled {
+    background-color: #ddd
+}
 a.btn:hover{
 	color: #fff;
 }
@@ -1321,7 +1325,7 @@ label{
 	padding-right: 1em;
 	display: block;
 }
-input[type=text],  input[type=email], input[type=password], textarea, input[type=tel],  input[type=range], input[type=url]{
+input[type=text],  input[type=email], input[type=password], textarea, input[type=tel],  input[type=range], input[type=url], input[type=number]{
  	border: none;
 	padding: 14px 2%;
 	font-family: 'RobotoCondensed';
@@ -1339,7 +1343,7 @@ input[type=text],  input[type=email], input[type=password], textarea, input[type
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-input[type=text]:focus, textarea:focus, input[type=email]:focus, input[type=password]:focus{
+input[type=text]:focus, textarea:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus{
  	background: #f9f9f9;
 }
 input.half{

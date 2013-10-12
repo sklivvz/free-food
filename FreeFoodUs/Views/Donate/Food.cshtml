@@ -1,31 +1,52 @@
 ﻿@model dynamic
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Donate";
 }
-
+<link href="~/css/font-awesome.css" rel="stylesheet" />
 <h2>Donate Food</h2>
-<ul id="items_container"></ul>
-<input type="text" id="item_name" placeholder="Item name..." />
-<input type="number" id="item_quantity" value="1" />
-<input type="submit" id="add_item" disabled="disabled"/>
+<div>
+    <input style="width: 90px; display: initial" type="number" id="item_quantity" value="1" min="1" max="999"/>
+    <input style="width: 30%; display: initial" type="text" id="item_name" placeholder="Item name..." />
+    <input style="display: initial" type="button" id="add_item" disabled="disabled" value="Add" />
+</div>
+<table id="items_container"></table>
 
 <script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
 <script type="text/javascript">
 
-    function submit() {
-        $("#items_container").append('<li>' + $("#item_name").val() + ' - ' + $("#item_quantity").val() + '</li>').slideDown();
+    function clearInput() {
         $("#item_name").val("");
         $("#item_quantity").val("1");
         $("#add_item").attr('disabled', 'disabled');
     }
 
-    $("#item_name").change(function() {
-        if ($("#item_name").val().length === 0)
+    function removeItem() {
+        $(this).parents("tr").remove();
+    }
+    
+    function submit() {
+        var $tpl = $($("#row-template").html());
+        $tpl.find("td.first").append($("#item_quantity").val());
+        $tpl.find("td.second").append($("#item_name").val());
+        $tpl.find("td.third").append($("<i class='icon-remove-sign'></i>").click(removeItem));
+        $("#items_container").append($tpl);
+        clearInput();
+    }
+
+    $("#item_name").change(function () {
+        if ($("#item_name").val().length === 0) {
             $("#add_item").attr('disabled', 'disabled');
-        else
+        } else {
             $("#add_item").removeAttr('disabled');
+        }
+    });
+
+    $(".remove-item").click(function() {
+        $(this).remove();
     });
     
+
     $("#add_item").click(submit);
 
 </script>
+<script type="text/html" id="row-template"><tr><td class="first"></td><td class="second"></td><td class="third"></td></tr></script>
