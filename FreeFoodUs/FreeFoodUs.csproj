@@ -169,6 +169,7 @@
     <Content Include="font\socialico-webfont-webfont.eot" />
     <Content Include="font\socialico-webfont-webfont.ttf" />
     <Content Include="font\socialico-webfont-webfont.woff" />
+    <Content Include="data\foods.json" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="img\logo%402x.png" />
     <Content Include="Scripts\jquery-2.0.3.js" />

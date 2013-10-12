@@ -204,8 +204,7 @@ hr, .right-aside, blockquote.right, fieldset, .main table, .main table th, .main
    03. Logos
    ========================================================================== */  
 .logo{
-	max-width: 99px; /* Update width to suite your own logo size */
-	padding-top: 1em;
+	max-width: 255px; /* Update width to suite your own logo size */
 }
 
 
