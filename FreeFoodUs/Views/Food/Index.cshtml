@@ -1,7 +1,18 @@
-﻿@model dynamic
+﻿@model List<FreeFoodUs.Models.FoodStock>
 
 @{
     ViewBag.Title = "food";
 }
 
-<h2>food</h2>
+<h2>food available</h2>
+@if (Model.Any())
+{
+    foreach (var f in Model)
+    {
+        <li>@f.Number @f.Name</li>
+    }
+}
+else
+{
+    @:Nothing yet
+}
