@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using FreeFoodUs.Models;
 
 namespace FreeFoodUs.Controllers
 {
@@ -13,7 +14,7 @@ namespace FreeFoodUs.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(FoodStock.All());
         }
 
     }
