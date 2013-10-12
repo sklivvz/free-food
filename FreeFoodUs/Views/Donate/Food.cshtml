@@ -4,23 +4,39 @@
 }
 <link href="~/css/font-awesome.css" rel="stylesheet" />
 <h2>Donate Food</h2>
-<table>
-    <tr>
-        <td><input style="width: 90px; display: initial" type="number" id="item_quantity" value="1" min="1" max="999" /></td>
-        <td><input style="display: initial" class="typeahead" type="text" id="item_name" placeholder="Item name..." /></td>
-        <td><input style="display: initial" type="button" id="add_item" disabled="disabled" value="Add" /></td>
-    </tr>
-</table>
+<div>
+    <div style="float:left;margin-left:5px;"><input style="width: 90px; display: initial" type="number" id="item_quantity" value="1" min="1" max="999" /></div>
+    <div style="float:left;margin-left:5px;"><input type="text" style="width: 500px" id="item_name" placeholder="Item name..." /></div>
+    <div style="float:left;margin-left:5px;"><input style="margin-top:0" type="button" id="add_item" disabled="disabled" value="Add" /></div>
+</div>
 <table id="items_container"></table>
 <script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
 <script type="text/javascript" src="~/Scripts/typeahead.js"></script>
 <script type="text/javascript" src="~/Scripts/hogan-2.0.0.js"></script>
+
+<script type="text/html" id="row-template">
+    <tr>
+        <td class="first"></td>
+        <td class="second"></td>
+        <td class="third"></td>
+    </tr>
+</script>
+<script type="text/html" id="item-template">
+    <div style="background-color: white; width:500px;font-family: RobotoCondensed;">
+        <div style="font-size: x-small; float: right">{{Group}}</div>
+        <div style="font-size: x-small; float: left">{{SubGroup}}</div>
+        <div style="clear:both">{{value}}</div>
+    </div>
+</script>
+
+
 <script type="text/javascript">
 
     function clearInput() {
         $("#item_name").val("");
         $("#item_quantity").val("1");
         $("#add_item").attr('disabled', 'disabled');
+        $("#item_name").typeahead('setQuery', '');
     }
 
     function removeItem() {
@@ -55,23 +71,9 @@
     $('#item_name').typeahead({
         name: 'Food',
         prefetch: '../data/foods.js',
-        //limit: 5,
+        limit: 5,
         template: itemTemplate,
         engine: Hogan
     });
 
-</script>
-<script type="text/html" id="row-template">
-    <tr>
-        <td class="first"></td>
-        <td class="second"></td>
-        <td class="third"></td>
-    </tr>
-</script>
-<script type="text/html" id="item-template">
-    <div>
-        <div>{{Group}}</div>
-        <div>{{Food}}</div>
-        <div>{{SubGroup}}</div>
-    </div>
 </script>

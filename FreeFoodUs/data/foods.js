@@ -1,1 +1,2162 @@
-[{ "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Apples", "Tokens": ["Apples"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Bananas", "Tokens": ["Bananas"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Berries", "Tokens": ["Berries"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Grapes", "Tokens": ["Grapes"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Lemons", "Tokens": ["Lemons"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Lime", "Tokens": ["Lime"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Melons", "Tokens": ["Melons"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Nectarines", "Tokens": ["Nectarines"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Oranges", "Tokens": ["Oranges"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Peaches", "Tokens": ["Peaches"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Pears", "Tokens": ["Pears"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Plums", "Tokens": ["Plums"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Strawberries", "Tokens": ["Strawberries"] }, { "Group": "Produce Items", "SubGroup": "Fruits", "Value": "Watermelon", "Tokens": ["Watermelon"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Asparagus", "Tokens": ["Asparagus"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Broccoli", "Tokens": ["Broccoli"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Cabbage", "Tokens": ["Cabbage"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Carrots", "Tokens": ["Carrots"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Cauliflower", "Tokens": ["Cauliflower"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Celery", "Tokens": ["Celery"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Corn", "Tokens": ["Corn"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Garlic", "Tokens": ["Garlic"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Lettuce", "Tokens": ["Lettuce"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Mushrooms", "Tokens": ["Mushrooms"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Onions", "Tokens": ["Onions"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Peppers", "Tokens": ["Peppers"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Potato", "Tokens": ["Potato"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Squash", "Tokens": ["Squash"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Sweet Potato", "Tokens": ["Sweet Potato"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Tomatoes", "Tokens": ["Tomatoes"] }, { "Group": "Produce Items", "SubGroup": "Vegetables", "Value": "Zucchini", "Tokens": ["Zucchini"] }, { "Group": "Produce Items", "SubGroup": "Canned Fruits", "Value": "Cherries", "Tokens": ["Cherries"] }, { "Group": "Produce Items", "SubGroup": "Canned Fruits", "Value": "Mixed Fruit", "Tokens": ["Mixed Fruit"] }, { "Group": "Produce Items", "SubGroup": "Canned Fruits", "Value": "Peaches", "Tokens": ["Peaches"] }, { "Group": "Produce Items", "SubGroup": "Canned Fruits", "Value": "Pears", "Tokens": ["Pears"] }, { "Group": "Produce Items", "SubGroup": "Canned Fruits", "Value": "Pineapples", "Tokens": ["Pineapples"] }, { "Group": "Produce Items", "SubGroup": "Canned Vegetables", "Value": "Asparagus", "Tokens": ["Asparagus"] }, { "Group": "Produce Items", "SubGroup": "Canned Vegetables", "Value": "Carrots", "Tokens": ["Carrots"] }, { "Group": "Produce Items", "SubGroup": "Canned Vegetables", "Value": "Corn", "Tokens": ["Corn"] }, { "Group": "Produce Items", "SubGroup": "Canned Vegetables", "Value": "Greenbeans", "Tokens": ["Greenbeans"] }, { "Group": "Produce Items", "SubGroup": "Canned Vegetables", "Value": "Peas", "Tokens": ["Peas"] }, { "Group": "Produce Items", "SubGroup": "Canned Vegetables", "Value": "Potatoes", "Tokens": ["Potatoes"] }, { "Group": "Produce Items", "SubGroup": "Canned Vegetables", "Value": "Tomatoes", "Tokens": ["Tomatoes"] }, { "Group": "Produce Items", "SubGroup": "Beans", "Value": "Baked Beans", "Tokens": ["Baked Beans"] }, { "Group": "Produce Items", "SubGroup": "Beans", "Value": "Butter Beans", "Tokens": ["Butter Beans"] }, { "Group": "Produce Items", "SubGroup": "Beans", "Value": "Green Beans", "Tokens": ["Green Beans"] }, { "Group": "Produce Items", "SubGroup": "Beans", "Value": "Kidney Beans", "Tokens": ["Kidney Beans"] }, { "Group": "Produce Items", "SubGroup": "Beans", "Value": "Pinto Beans", "Tokens": ["Pinto Beans"] }, { "Group": "Produce Items", "SubGroup": "Beans", "Value": "PorkNBeans", "Tokens": ["PorkNBeans"] }, { "Group": "Produce Items", "SubGroup": "Beans", "Value": "String Beans", "Tokens": ["String Beans"] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "Broccoli", "Tokens": ["Broccoli"] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "Carrots", "Tokens": ["Carrots"] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "Corn", "Tokens": ["Corn"] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "Dinners", "Tokens": ["Dinners"] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "French Fries", "Tokens": ["French Fries"] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "Ice Cream", "Tokens": ["Ice Cream"] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "Mixed Veg.", "Tokens": ["Mixed Veg."] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "Peas", "Tokens": ["Peas"] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "Pizza", "Tokens": ["Pizza"] }, { "Group": "Produce Items", "SubGroup": "Frozen", "Value": "Tater Tots", "Tokens": ["Tater Tots"] }, { "Group": "Meat Items", "SubGroup": "Beef", "Value": "Ground", "Tokens": ["Ground"] }, { "Group": "Meat Items", "SubGroup": "Beef", "Value": "Hamburger", "Tokens": ["Hamburger"] }, { "Group": "Meat Items", "SubGroup": "Beef", "Value": "Roast", "Tokens": ["Roast"] }, { "Group": "Meat Items", "SubGroup": "Beef", "Value": "Steaks", "Tokens": ["Steaks"] }, { "Group": "Meat Items", "SubGroup": "Chicken", "Value": "Boneless Breast", "Tokens": ["Boneless Breast"] }, { "Group": "Meat Items", "SubGroup": "Chicken", "Value": "Breast with Bone", "Tokens": ["Breast with Bone"] }, { "Group": "Meat Items", "SubGroup": "Chicken", "Value": "Legs", "Tokens": ["Legs"] }, { "Group": "Meat Items", "SubGroup": "Chicken", "Value": "Whole Chicken", "Tokens": ["Whole Chicken"] }, { "Group": "Meat Items", "SubGroup": "Chicken", "Value": "Wings", "Tokens": ["Wings"] }, { "Group": "Meat Items", "SubGroup": "Deli Meat", "Value": "Ham", "Tokens": ["Ham"] }, { "Group": "Meat Items", "SubGroup": "Deli Meat", "Value": "Roast Beef", "Tokens": ["Roast Beef"] }, { "Group": "Meat Items", "SubGroup": "Deli Meat", "Value": "Smoked Turkey", "Tokens": ["Smoked Turkey"] }, { "Group": "Meat Items", "SubGroup": "Deli Meat", "Value": "Turkey", "Tokens": ["Turkey"] }, { "Group": "Meat Items", "SubGroup": "Pork", "Value": "Bacon", "Tokens": ["Bacon"] }, { "Group": "Meat Items", "SubGroup": "Pork", "Value": "Chops", "Tokens": ["Chops"] }, { "Group": "Meat Items", "SubGroup": "Pork", "Value": "Ham", "Tokens": ["Ham"] }, { "Group": "Meat Items", "SubGroup": "Pork", "Value": "Roast", "Tokens": ["Roast"] }, { "Group": "Meat Items", "SubGroup": "Pork", "Value": "Sausage", "Tokens": ["Sausage"] }, { "Group": "Meat Items", "SubGroup": "Seafood", "Value": "Crabmeat", "Tokens": ["Crabmeat"] }, { "Group": "Meat Items", "SubGroup": "Seafood", "Value": "Fish", "Tokens": ["Fish"] }, { "Group": "Meat Items", "SubGroup": "Seafood", "Value": "Scallops", "Tokens": ["Scallops"] }, { "Group": "Meat Items", "SubGroup": "Seafood", "Value": "Shrimp", "Tokens": ["Shrimp"] }, { "Group": "Meat Items", "SubGroup": "Canned Meats", "Value": "Chicken", "Tokens": ["Chicken"] }, { "Group": "Meat Items", "SubGroup": "Canned Meats", "Value": "Corned Beef", "Tokens": ["Corned Beef"] }, { "Group": "Meat Items", "SubGroup": "Canned Meats", "Value": "Ham", "Tokens": ["Ham"] }, { "Group": "Meat Items", "SubGroup": "Canned Meats", "Value": "Salmon", "Tokens": ["Salmon"] }, { "Group": "Meat Items", "SubGroup": "Canned Meats", "Value": "Tuna", "Tokens": ["Tuna"] }, { "Group": "Meat Items", "SubGroup": "Canned Meats", "Value": "Vienna Sausage", "Tokens": ["Vienna Sausage"] }, { "Group": "Other", "SubGroup": "Oils", "Value": "Cooking Spray", "Tokens": ["Cooking Spray"] }, { "Group": "Other", "SubGroup": "Oils", "Value": "Olive Oil", "Tokens": ["Olive Oil"] }, { "Group": "Other", "SubGroup": "Oils", "Value": "Vegetable Oil", "Tokens": ["Vegetable Oil"] }, { "Group": "Other", "SubGroup": "Dressings", "Value": "Blue Cheese", "Tokens": ["Blue Cheese"] }, { "Group": "Other", "SubGroup": "Dressings", "Value": "French", "Tokens": ["French"] }, { "Group": "Other", "SubGroup": "Dressings", "Value": "Italian", "Tokens": ["Italian"] }, { "Group": "Other", "SubGroup": "Dressings", "Value": "Ranch", "Tokens": ["Ranch"] }, { "Group": "Other", "SubGroup": "Dressings", "Value": "Thousand Island", "Tokens": ["Thousand Island"] }, { "Group": "Other", "SubGroup": "Snacks", "Value": "Candy", "Tokens": ["Candy"] }, { "Group": "Other", "SubGroup": "Snacks", "Value": "Cookies", "Tokens": ["Cookies"] }, { "Group": "Other", "SubGroup": "Snacks", "Value": "Crackers", "Tokens": ["Crackers"] }, { "Group": "Other", "SubGroup": "Snacks", "Value": "Nuts", "Tokens": ["Nuts"] }, { "Group": "Other", "SubGroup": "Snacks", "Value": "Popcorn", "Tokens": ["Popcorn"] }, { "Group": "Other", "SubGroup": "Snacks", "Value": "Potato Chips", "Tokens": ["Potato Chips"] }, { "Group": "Other", "SubGroup": "Snacks", "Value": "Pretzels", "Tokens": ["Pretzels"] }, { "Group": "Other", "SubGroup": "Snacks", "Value": "Raisins", "Tokens": ["Raisins"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Chicken and Rice", "Tokens": ["Chicken and Rice"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Chicken Noodle", "Tokens": ["Chicken Noodle"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Cream of Broccoli", "Tokens": ["Cream of Broccoli"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Cream of Celery", "Tokens": ["Cream of Celery"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Cream of Chicken", "Tokens": ["Cream of Chicken"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Cream of Mushroom", "Tokens": ["Cream of Mushroom"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Tomato", "Tokens": ["Tomato"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Vegetable", "Tokens": ["Vegetable"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Vegetable Beef", "Tokens": ["Vegetable Beef"] }, { "Group": "Other", "SubGroup": "Soups", "Value": "Vegetable Chicken", "Tokens": ["Vegetable Chicken"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Celery Salt", "Tokens": ["Celery Salt"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Cinnamon", "Tokens": ["Cinnamon"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Garlic Powder", "Tokens": ["Garlic Powder"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Garlic Salt", "Tokens": ["Garlic Salt"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Ginger", "Tokens": ["Ginger"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Nutmeg", "Tokens": ["Nutmeg"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Onion Powder", "Tokens": ["Onion Powder"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Oregano", "Tokens": ["Oregano"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Paprika", "Tokens": ["Paprika"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Parsley", "Tokens": ["Parsley"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Pepper", "Tokens": ["Pepper"] }, { "Group": "Other", "SubGroup": "Seasonings", "Value": "Salt", "Tokens": ["Salt"] }, { "Group": "Other", "SubGroup": "Breads", "Value": "Biscuits", "Tokens": ["Biscuits"] }, { "Group": "Other", "SubGroup": "Breads", "Value": "Buns", "Tokens": ["Buns"] }, { "Group": "Other", "SubGroup": "Breads", "Value": "Hamburger", "Tokens": ["Hamburger"] }, { "Group": "Other", "SubGroup": "Breads", "Value": "Hot Dog", "Tokens": ["Hot Dog"] }, { "Group": "Other", "SubGroup": "Breads", "Value": "French", "Tokens": ["French"] }, { "Group": "Other", "SubGroup": "Breads", "Value": "Italian", "Tokens": ["Italian"] }, { "Group": "Other", "SubGroup": "Breads", "Value": "Rolls", "Tokens": ["Rolls"] }, { "Group": "Other", "SubGroup": "Breads", "Value": "Wheat", "Tokens": ["Wheat"] }, { "Group": "Other", "SubGroup": "Breads", "Value": "White", "Tokens": ["White"] }, { "Group": "Other", "SubGroup": "Beverages", "Value": "Coffee", "Tokens": ["Coffee"] }, { "Group": "Other", "SubGroup": "Beverages", "Value": "Juice", "Tokens": ["Juice"] }, { "Group": "Other", "SubGroup": "Beverages", "Value": "Milk", "Tokens": ["Milk"] }, { "Group": "Other", "SubGroup": "Beverages", "Value": "Orange Juice", "Tokens": ["Orange Juice"] }, { "Group": "Other", "SubGroup": "Beverages", "Value": "Soft Drinks", "Tokens": ["Soft Drinks"] }, { "Group": "Other", "SubGroup": "Beverages", "Value": "Sports Drinks", "Tokens": ["Sports Drinks"] }, { "Group": "Other", "SubGroup": "Beverages", "Value": "Tea", "Tokens": ["Tea"] }, { "Group": "Other", "SubGroup": "Beverages", "Value": "Water", "Tokens": ["Water"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Butter", "Tokens": ["Butter"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Cheese", "Tokens": ["Cheese"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Cottage Cheese", "Tokens": ["Cottage Cheese"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Cream Cheese", "Tokens": ["Cream Cheese"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Creamer", "Tokens": ["Creamer"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Eggs", "Tokens": ["Eggs"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Margarine", "Tokens": ["Margarine"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Milk", "Tokens": ["Milk"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Sliced Cheese", "Tokens": ["Sliced Cheese"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Sour Cream", "Tokens": ["Sour Cream"] }, { "Group": "Other", "SubGroup": "Dairy", "Value": "Yogurt", "Tokens": ["Yogurt"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "BBQ Sauce", "Tokens": ["BBQ Sauce"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Honey", "Tokens": ["Honey"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Horseradish", "Tokens": ["Horseradish"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Jelly", "Tokens": ["Jelly"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Ketchup", "Tokens": ["Ketchup"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Mayonnaise", "Tokens": ["Mayonnaise"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Mustard", "Tokens": ["Mustard"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Peanut Butter", "Tokens": ["Peanut Butter"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Salsa", "Tokens": ["Salsa"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Soy Sauce", "Tokens": ["Soy Sauce"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Syrup", "Tokens": ["Syrup"] }, { "Group": "Other", "SubGroup": "Condiments", "Value": "Worcestershire", "Tokens": ["Worcestershire"] }, { "Group": "Other", "SubGroup": "Pet Items", "Value": "Dog Food", "Tokens": ["Dog Food"] }, { "Group": "Other", "SubGroup": "Pet Items", "Value": "Cat Food", "Tokens": ["Cat Food"] }, { "Group": "Other", "SubGroup": "Pet Items", "Value": "Cat Litter", "Tokens": ["Cat Litter"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Foil", "Tokens": ["Foil"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Freezer Bags", "Tokens": ["Freezer Bags"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Kitchen Bags", "Tokens": ["Kitchen Bags"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Paper Towels", "Tokens": ["Paper Towels"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Plastic Wrap", "Tokens": ["Plastic Wrap"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Sandwich Bags", "Tokens": ["Sandwich Bags"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Storage Bags", "Tokens": ["Storage Bags"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Tissue", "Tokens": ["Tissue"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Toilet Paper", "Tokens": ["Toilet Paper"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Trash Bag", "Tokens": ["Trash Bag"] }, { "Group": "Other", "SubGroup": "Paper", "Value": "Yard Bags", "Tokens": ["Yard Bags"] }, { "Group": "Other", "SubGroup": "Medicine", "Value": "Antiacid", "Tokens": ["Antiacid"] }, { "Group": "Other", "SubGroup": "Medicine", "Value": "Bandaids", "Tokens": ["Bandaids"] }, { "Group": "Other", "SubGroup": "Medicine", "Value": "Cough Drops", "Tokens": ["Cough Drops"] }, { "Group": "Other", "SubGroup": "Medicine", "Value": "First Aid Cream", "Tokens": ["First Aid Cream"] }, { "Group": "Other", "SubGroup": "Medicine", "Value": "Hydrogen Peroxide", "Tokens": ["Hydrogen Peroxide"] }, { "Group": "Other", "SubGroup": "Medicine", "Value": "Pain-Reliever", "Tokens": ["Pain-Reliever"] }, { "Group": "Other", "SubGroup": "Medicine", "Value": "Rubbing Alcohol", "Tokens": ["Rubbing Alcohol"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Air Freshner", "Tokens": ["Air Freshner"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Bleach", "Tokens": ["Bleach"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Broom", "Tokens": ["Broom"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Dishwasher Detergent", "Tokens": ["Dishwasher Detergent"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Dishwashing Soap", "Tokens": ["Dishwashing Soap"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Dryer Sheets", "Tokens": ["Dryer Sheets"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Furniture Polish", "Tokens": ["Furniture Polish"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Glass Cleaner", "Tokens": ["Glass Cleaner"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Laundry Detergent", "Tokens": ["Laundry Detergent"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Mop", "Tokens": ["Mop"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Scrub Brush", "Tokens": ["Scrub Brush"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Sponges", "Tokens": ["Sponges"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Toilet Bowl Cleaners", "Tokens": ["Toilet Bowl Cleaners"] }, { "Group": "Other", "SubGroup": "Cleaners", "Value": "Towels", "Tokens": ["Towels"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Batteries", "Tokens": ["Batteries"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Cards", "Tokens": ["Cards"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Camera Film", "Tokens": ["Camera Film"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Light Bulbs", "Tokens": ["Light Bulbs"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "VCR Tapes", "Tokens": ["VCR Tapes"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Deodorant", "Tokens": ["Deodorant"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Floss", "Tokens": ["Floss"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Lotion", "Tokens": ["Lotion"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Mouthwash", "Tokens": ["Mouthwash"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Petroleum Jelly", "Tokens": ["Petroleum Jelly"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Razors", "Tokens": ["Razors"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Shampoo", "Tokens": ["Shampoo"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Shaving Cream", "Tokens": ["Shaving Cream"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Soap", "Tokens": ["Soap"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Toothbrush", "Tokens": ["Toothbrush"] }, { "Group": "Other", "SubGroup": "Miscellaneous", "Value": "Toothpaste", "Tokens": ["Toothpaste"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Spaghetti Sauce", "Tokens": ["Spaghetti Sauce"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Tomato Paste", "Tokens": ["Tomato Paste"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Tomato Sauce", "Tokens": ["Tomato Sauce"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Angel Hair Pasta", "Tokens": ["Angel Hair Pasta"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Elbow Macaroni", "Tokens": ["Elbow Macaroni"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Lasagne Pasta", "Tokens": ["Lasagne Pasta"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Rotelle Pasta", "Tokens": ["Rotelle Pasta"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Shells Pasta", "Tokens": ["Shells Pasta"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Spaghetti Pasta", "Tokens": ["Spaghetti Pasta"] }, { "Group": "Other", "SubGroup": "Italian", "Value": "Vemicelli Pasta", "Tokens": ["Vemicelli Pasta"] }, { "Group": "Other", "SubGroup": "Mexican", "Value": "Green Chili", "Tokens": ["Green Chili"] }, { "Group": "Other", "SubGroup": "Mexican", "Value": "Refried Beans", "Tokens": ["Refried Beans"] }, { "Group": "Other", "SubGroup": "Mexican", "Value": "Salsa", "Tokens": ["Salsa"] }, { "Group": "Other", "SubGroup": "Mexican", "Value": "Spanish Rice", "Tokens": ["Spanish Rice"] }, { "Group": "Other", "SubGroup": "Mexican", "Value": "Tacos", "Tokens": ["Tacos"] }, { "Group": "Other", "SubGroup": "Mexican", "Value": "Tortillias - Corn", "Tokens": ["Tortillias - Corn"] }, { "Group": "Other", "SubGroup": "Mexican", "Value": "Tortillias - Flour", "Tokens": ["Tortillias - Flour"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Baking Powder", "Tokens": ["Baking Powder"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Baking Soda", "Tokens": ["Baking Soda"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Brown Sugar", "Tokens": ["Brown Sugar"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Brownie Mix", "Tokens": ["Brownie Mix"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Cake Mix", "Tokens": ["Cake Mix"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Cereal", "Tokens": ["Cereal"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Cocoa", "Tokens": ["Cocoa"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Cornstarch", "Tokens": ["Cornstarch"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Flour", "Tokens": ["Flour"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Jello", "Tokens": ["Jello"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Oatmeal", "Tokens": ["Oatmeal"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Pancake Mix", "Tokens": ["Pancake Mix"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Rice", "Tokens": ["Rice"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Sugar", "Tokens": ["Sugar"] }, { "Group": "Other", "SubGroup": "Packaged", "Value": "Vanilla Extract", "Tokens": ["Vanilla Extract"] }, { "Group": "Other", "SubGroup": "Baby Items", "Value": "Diapers", "Tokens": ["Diapers"] }, { "Group": "Other", "SubGroup": "Baby Items", "Value": "Formula", "Tokens": ["Formula"] }, { "Group": "Other", "SubGroup": "Baby Items", "Value": "Lotion", "Tokens": ["Lotion"] }, { "Group": "Other", "SubGroup": "Baby Items", "Value": "Oil", "Tokens": ["Oil"] }, { "Group": "Other", "SubGroup": "Baby Items", "Value": "Rash Cream", "Tokens": ["Rash Cream"] }, { "Group": "Other", "SubGroup": "Baby Items", "Value": "Shampoo", "Tokens": ["Shampoo"] }, { "Group": "Other", "SubGroup": "Baby Items", "Value": "Wipes", "Tokens": ["Wipes"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Apple Juice", "Tokens": ["Apple Juice"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Applesauce", "Tokens": ["Applesauce"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Bananas", "Tokens": ["Bananas"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Beef", "Tokens": ["Beef"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Carrots", "Tokens": ["Carrots"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Chicken", "Tokens": ["Chicken"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Dinners", "Tokens": ["Dinners"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Greenbeans", "Tokens": ["Greenbeans"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Mixed Veg.", "Tokens": ["Mixed Veg."] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Peaches", "Tokens": ["Peaches"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Pears", "Tokens": ["Pears"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Squash", "Tokens": ["Squash"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Sweet Potato", "Tokens": ["Sweet Potato"] }, { "Group": "Other", "SubGroup": "Baby Food", "Value": "Veal", "Tokens": ["Veal"] }]
+[
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Apples",
+        tokens: [
+            "Apples"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Bananas",
+        tokens: [
+            "Bananas"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Berries",
+        tokens: [
+            "Berries"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Grapes",
+        tokens: [
+            "Grapes"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Lemons",
+        tokens: [
+            "Lemons"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Lime",
+        tokens: [
+            "Lime"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Melons",
+        tokens: [
+            "Melons"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Nectarines",
+        tokens: [
+            "Nectarines"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Oranges",
+        tokens: [
+            "Oranges"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Peaches",
+        tokens: [
+            "Peaches"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Pears",
+        tokens: [
+            "Pears"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Plums",
+        tokens: [
+            "Plums"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Strawberries",
+        tokens: [
+            "Strawberries"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Fruits",
+        value: "Watermelon",
+        tokens: [
+            "Watermelon"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Asparagus",
+        tokens: [
+            "Asparagus"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Broccoli",
+        tokens: [
+            "Broccoli"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Cabbage",
+        tokens: [
+            "Cabbage"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Carrots",
+        tokens: [
+            "Carrots"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Cauliflower",
+        tokens: [
+            "Cauliflower"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Celery",
+        tokens: [
+            "Celery"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Corn",
+        tokens: [
+            "Corn"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Garlic",
+        tokens: [
+            "Garlic"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Lettuce",
+        tokens: [
+            "Lettuce"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Mushrooms",
+        tokens: [
+            "Mushrooms"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Onions",
+        tokens: [
+            "Onions"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Peppers",
+        tokens: [
+            "Peppers"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Potato",
+        tokens: [
+            "Potato"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Squash",
+        tokens: [
+            "Squash"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Sweet Potato",
+        tokens: [
+            "Sweet Potato"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Tomatoes",
+        tokens: [
+            "Tomatoes"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Vegetables",
+        value: "Zucchini",
+        tokens: [
+            "Zucchini"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Fruits",
+        value: "Cherries",
+        tokens: [
+            "Cherries"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Fruits",
+        value: "Mixed Fruit",
+        tokens: [
+            "Mixed Fruit"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Fruits",
+        value: "Peaches",
+        tokens: [
+            "Peaches"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Fruits",
+        value: "Pears",
+        tokens: [
+            "Pears"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Fruits",
+        value: "Pineapples",
+        tokens: [
+            "Pineapples"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Vegetables",
+        value: "Asparagus",
+        tokens: [
+            "Asparagus"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Vegetables",
+        value: "Carrots",
+        tokens: [
+            "Carrots"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Vegetables",
+        value: "Corn",
+        tokens: [
+            "Corn"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Vegetables",
+        value: "Greenbeans",
+        tokens: [
+            "Greenbeans"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Vegetables",
+        value: "Peas",
+        tokens: [
+            "Peas"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Vegetables",
+        value: "Potatoes",
+        tokens: [
+            "Potatoes"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Canned Vegetables",
+        value: "Tomatoes",
+        tokens: [
+            "Tomatoes"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Beans",
+        value: "Baked Beans",
+        tokens: [
+            "Baked Beans"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Beans",
+        value: "Butter Beans",
+        tokens: [
+            "Butter Beans"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Beans",
+        value: "Green Beans",
+        tokens: [
+            "Green Beans"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Beans",
+        value: "Kidney Beans",
+        tokens: [
+            "Kidney Beans"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Beans",
+        value: "Pinto Beans",
+        tokens: [
+            "Pinto Beans"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Beans",
+        value: "PorkNBeans",
+        tokens: [
+            "PorkNBeans"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Beans",
+        value: "String Beans",
+        tokens: [
+            "String Beans"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "Broccoli",
+        tokens: [
+            "Broccoli"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "Carrots",
+        tokens: [
+            "Carrots"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "Corn",
+        tokens: [
+            "Corn"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "Dinners",
+        tokens: [
+            "Dinners"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "French Fries",
+        tokens: [
+            "French Fries"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "Ice Cream",
+        tokens: [
+            "Ice Cream"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "Mixed Veg.",
+        tokens: [
+            "Mixed Veg."
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "Peas",
+        tokens: [
+            "Peas"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "Pizza",
+        tokens: [
+            "Pizza"
+        ]
+    },
+    {
+        group: "Produce Items",
+        subGroup: "Frozen",
+        value: "Tater Tots",
+        tokens: [
+            "Tater Tots"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Beef",
+        value: "Ground",
+        tokens: [
+            "Ground"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Beef",
+        value: "Hamburger",
+        tokens: [
+            "Hamburger"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Beef",
+        value: "Roast",
+        tokens: [
+            "Roast"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Beef",
+        value: "Steaks",
+        tokens: [
+            "Steaks"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Chicken",
+        value: "Boneless Breast",
+        tokens: [
+            "Boneless Breast"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Chicken",
+        value: "Breast with Bone",
+        tokens: [
+            "Breast with Bone"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Chicken",
+        value: "Legs",
+        tokens: [
+            "Legs"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Chicken",
+        value: "Whole Chicken",
+        tokens: [
+            "Whole Chicken"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Chicken",
+        value: "Wings",
+        tokens: [
+            "Wings"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Deli Meat",
+        value: "Ham",
+        tokens: [
+            "Ham"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Deli Meat",
+        value: "Roast Beef",
+        tokens: [
+            "Roast Beef"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Deli Meat",
+        value: "Smoked Turkey",
+        tokens: [
+            "Smoked Turkey"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Deli Meat",
+        value: "Turkey",
+        tokens: [
+            "Turkey"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Pork",
+        value: "Bacon",
+        tokens: [
+            "Bacon"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Pork",
+        value: "Chops",
+        tokens: [
+            "Chops"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Pork",
+        value: "Ham",
+        tokens: [
+            "Ham"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Pork",
+        value: "Roast",
+        tokens: [
+            "Roast"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Pork",
+        value: "Sausage",
+        tokens: [
+            "Sausage"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Seafood",
+        value: "Crabmeat",
+        tokens: [
+            "Crabmeat"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Seafood",
+        value: "Fish",
+        tokens: [
+            "Fish"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Seafood",
+        value: "Scallops",
+        tokens: [
+            "Scallops"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Seafood",
+        value: "Shrimp",
+        tokens: [
+            "Shrimp"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Canned Meats",
+        value: "Chicken",
+        tokens: [
+            "Chicken"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Canned Meats",
+        value: "Corned Beef",
+        tokens: [
+            "Corned Beef"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Canned Meats",
+        value: "Ham",
+        tokens: [
+            "Ham"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Canned Meats",
+        value: "Salmon",
+        tokens: [
+            "Salmon"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Canned Meats",
+        value: "Tuna",
+        tokens: [
+            "Tuna"
+        ]
+    },
+    {
+        group: "Meat Items",
+        subGroup: "Canned Meats",
+        value: "Vienna Sausage",
+        tokens: [
+            "Vienna Sausage"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Oils",
+        value: "Cooking Spray",
+        tokens: [
+            "Cooking Spray"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Oils",
+        value: "Olive Oil",
+        tokens: [
+            "Olive Oil"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Oils",
+        value: "Vegetable Oil",
+        tokens: [
+            "Vegetable Oil"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dressings",
+        value: "Blue Cheese",
+        tokens: [
+            "Blue Cheese"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dressings",
+        value: "French",
+        tokens: [
+            "French"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dressings",
+        value: "Italian",
+        tokens: [
+            "Italian"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dressings",
+        value: "Ranch",
+        tokens: [
+            "Ranch"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dressings",
+        value: "Thousand Island",
+        tokens: [
+            "Thousand Island"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Snacks",
+        value: "Candy",
+        tokens: [
+            "Candy"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Snacks",
+        value: "Cookies",
+        tokens: [
+            "Cookies"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Snacks",
+        value: "Crackers",
+        tokens: [
+            "Crackers"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Snacks",
+        value: "Nuts",
+        tokens: [
+            "Nuts"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Snacks",
+        value: "Popcorn",
+        tokens: [
+            "Popcorn"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Snacks",
+        value: "Potato Chips",
+        tokens: [
+            "Potato Chips"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Snacks",
+        value: "Pretzels",
+        tokens: [
+            "Pretzels"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Snacks",
+        value: "Raisins",
+        tokens: [
+            "Raisins"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Chicken and Rice",
+        tokens: [
+            "Chicken and Rice"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Chicken Noodle",
+        tokens: [
+            "Chicken Noodle"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Cream of Broccoli",
+        tokens: [
+            "Cream of Broccoli"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Cream of Celery",
+        tokens: [
+            "Cream of Celery"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Cream of Chicken",
+        tokens: [
+            "Cream of Chicken"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Cream of Mushroom",
+        tokens: [
+            "Cream of Mushroom"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Tomato",
+        tokens: [
+            "Tomato"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Vegetable",
+        tokens: [
+            "Vegetable"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Vegetable Beef",
+        tokens: [
+            "Vegetable Beef"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Soups",
+        value: "Vegetable Chicken",
+        tokens: [
+            "Vegetable Chicken"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Celery Salt",
+        tokens: [
+            "Celery Salt"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Cinnamon",
+        tokens: [
+            "Cinnamon"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Garlic Powder",
+        tokens: [
+            "Garlic Powder"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Garlic Salt",
+        tokens: [
+            "Garlic Salt"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Ginger",
+        tokens: [
+            "Ginger"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Nutmeg",
+        tokens: [
+            "Nutmeg"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Onion Powder",
+        tokens: [
+            "Onion Powder"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Oregano",
+        tokens: [
+            "Oregano"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Paprika",
+        tokens: [
+            "Paprika"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Parsley",
+        tokens: [
+            "Parsley"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Pepper",
+        tokens: [
+            "Pepper"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Seasonings",
+        value: "Salt",
+        tokens: [
+            "Salt"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Breads",
+        value: "Biscuits",
+        tokens: [
+            "Biscuits"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Breads",
+        value: "Buns",
+        tokens: [
+            "Buns"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Breads",
+        value: "Hamburger",
+        tokens: [
+            "Hamburger"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Breads",
+        value: "Hot Dog",
+        tokens: [
+            "Hot Dog"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Breads",
+        value: "French",
+        tokens: [
+            "French"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Breads",
+        value: "Italian",
+        tokens: [
+            "Italian"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Breads",
+        value: "Rolls",
+        tokens: [
+            "Rolls"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Breads",
+        value: "Wheat",
+        tokens: [
+            "Wheat"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Breads",
+        value: "White",
+        tokens: [
+            "White"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Beverages",
+        value: "Coffee",
+        tokens: [
+            "Coffee"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Beverages",
+        value: "Juice",
+        tokens: [
+            "Juice"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Beverages",
+        value: "Milk",
+        tokens: [
+            "Milk"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Beverages",
+        value: "Orange Juice",
+        tokens: [
+            "Orange Juice"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Beverages",
+        value: "Soft Drinks",
+        tokens: [
+            "Soft Drinks"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Beverages",
+        value: "Sports Drinks",
+        tokens: [
+            "Sports Drinks"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Beverages",
+        value: "Tea",
+        tokens: [
+            "Tea"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Beverages",
+        value: "Water",
+        tokens: [
+            "Water"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Butter",
+        tokens: [
+            "Butter"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Cheese",
+        tokens: [
+            "Cheese"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Cottage Cheese",
+        tokens: [
+            "Cottage Cheese"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Cream Cheese",
+        tokens: [
+            "Cream Cheese"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Creamer",
+        tokens: [
+            "Creamer"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Eggs",
+        tokens: [
+            "Eggs"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Margarine",
+        tokens: [
+            "Margarine"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Milk",
+        tokens: [
+            "Milk"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Sliced Cheese",
+        tokens: [
+            "Sliced Cheese"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Sour Cream",
+        tokens: [
+            "Sour Cream"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Dairy",
+        value: "Yogurt",
+        tokens: [
+            "Yogurt"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "BBQ Sauce",
+        tokens: [
+            "BBQ Sauce"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Honey",
+        tokens: [
+            "Honey"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Horseradish",
+        tokens: [
+            "Horseradish"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Jelly",
+        tokens: [
+            "Jelly"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Ketchup",
+        tokens: [
+            "Ketchup"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Mayonnaise",
+        tokens: [
+            "Mayonnaise"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Mustard",
+        tokens: [
+            "Mustard"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Peanut Butter",
+        tokens: [
+            "Peanut Butter"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Salsa",
+        tokens: [
+            "Salsa"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Soy Sauce",
+        tokens: [
+            "Soy Sauce"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Syrup",
+        tokens: [
+            "Syrup"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Condiments",
+        value: "Worcestershire",
+        tokens: [
+            "Worcestershire"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Pet Items",
+        value: "Dog Food",
+        tokens: [
+            "Dog Food"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Pet Items",
+        value: "Cat Food",
+        tokens: [
+            "Cat Food"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Pet Items",
+        value: "Cat Litter",
+        tokens: [
+            "Cat Litter"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Foil",
+        tokens: [
+            "Foil"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Freezer Bags",
+        tokens: [
+            "Freezer Bags"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Kitchen Bags",
+        tokens: [
+            "Kitchen Bags"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Paper Towels",
+        tokens: [
+            "Paper Towels"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Plastic Wrap",
+        tokens: [
+            "Plastic Wrap"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Sandwich Bags",
+        tokens: [
+            "Sandwich Bags"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Storage Bags",
+        tokens: [
+            "Storage Bags"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Tissue",
+        tokens: [
+            "Tissue"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Toilet Paper",
+        tokens: [
+            "Toilet Paper"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Trash Bag",
+        tokens: [
+            "Trash Bag"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Paper",
+        value: "Yard Bags",
+        tokens: [
+            "Yard Bags"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Medicine",
+        value: "Antiacid",
+        tokens: [
+            "Antiacid"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Medicine",
+        value: "Bandaids",
+        tokens: [
+            "Bandaids"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Medicine",
+        value: "Cough Drops",
+        tokens: [
+            "Cough Drops"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Medicine",
+        value: "First Aid Cream",
+        tokens: [
+            "First Aid Cream"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Medicine",
+        value: "Hydrogen Peroxide",
+        tokens: [
+            "Hydrogen Peroxide"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Medicine",
+        value: "Pain-Reliever",
+        tokens: [
+            "Pain-Reliever"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Medicine",
+        value: "Rubbing Alcohol",
+        tokens: [
+            "Rubbing Alcohol"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Air Freshner",
+        tokens: [
+            "Air Freshner"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Bleach",
+        tokens: [
+            "Bleach"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Broom",
+        tokens: [
+            "Broom"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Dishwasher Detergent",
+        tokens: [
+            "Dishwasher Detergent"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Dishwashing Soap",
+        tokens: [
+            "Dishwashing Soap"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Dryer Sheets",
+        tokens: [
+            "Dryer Sheets"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Furniture Polish",
+        tokens: [
+            "Furniture Polish"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Glass Cleaner",
+        tokens: [
+            "Glass Cleaner"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Laundry Detergent",
+        tokens: [
+            "Laundry Detergent"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Mop",
+        tokens: [
+            "Mop"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Scrub Brush",
+        tokens: [
+            "Scrub Brush"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Sponges",
+        tokens: [
+            "Sponges"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Toilet Bowl Cleaners",
+        tokens: [
+            "Toilet Bowl Cleaners"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Cleaners",
+        value: "Towels",
+        tokens: [
+            "Towels"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Batteries",
+        tokens: [
+            "Batteries"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Cards",
+        tokens: [
+            "Cards"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Camera Film",
+        tokens: [
+            "Camera Film"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Light Bulbs",
+        tokens: [
+            "Light Bulbs"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "VCR Tapes",
+        tokens: [
+            "VCR Tapes"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Deodorant",
+        tokens: [
+            "Deodorant"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Floss",
+        tokens: [
+            "Floss"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Lotion",
+        tokens: [
+            "Lotion"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Mouthwash",
+        tokens: [
+            "Mouthwash"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Petroleum Jelly",
+        tokens: [
+            "Petroleum Jelly"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Razors",
+        tokens: [
+            "Razors"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Shampoo",
+        tokens: [
+            "Shampoo"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Shaving Cream",
+        tokens: [
+            "Shaving Cream"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Soap",
+        tokens: [
+            "Soap"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Toothbrush",
+        tokens: [
+            "Toothbrush"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Miscellaneous",
+        value: "Toothpaste",
+        tokens: [
+            "Toothpaste"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Spaghetti Sauce",
+        tokens: [
+            "Spaghetti Sauce"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Tomato Paste",
+        tokens: [
+            "Tomato Paste"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Tomato Sauce",
+        tokens: [
+            "Tomato Sauce"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Angel Hair Pasta",
+        tokens: [
+            "Angel Hair Pasta"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Elbow Macaroni",
+        tokens: [
+            "Elbow Macaroni"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Lasagne Pasta",
+        tokens: [
+            "Lasagne Pasta"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Rotelle Pasta",
+        tokens: [
+            "Rotelle Pasta"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Shells Pasta",
+        tokens: [
+            "Shells Pasta"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Spaghetti Pasta",
+        tokens: [
+            "Spaghetti Pasta"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Italian",
+        value: "Vemicelli Pasta",
+        tokens: [
+            "Vemicelli Pasta"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Mexican",
+        value: "Green Chili",
+        tokens: [
+            "Green Chili"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Mexican",
+        value: "Refried Beans",
+        tokens: [
+            "Refried Beans"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Mexican",
+        value: "Salsa",
+        tokens: [
+            "Salsa"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Mexican",
+        value: "Spanish Rice",
+        tokens: [
+            "Spanish Rice"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Mexican",
+        value: "Tacos",
+        tokens: [
+            "Tacos"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Mexican",
+        value: "Tortillias - Corn",
+        tokens: [
+            "Tortillias - Corn"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Mexican",
+        value: "Tortillias - Flour",
+        tokens: [
+            "Tortillias - Flour"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Baking Powder",
+        tokens: [
+            "Baking Powder"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Baking Soda",
+        tokens: [
+            "Baking Soda"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Brown Sugar",
+        tokens: [
+            "Brown Sugar"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Brownie Mix",
+        tokens: [
+            "Brownie Mix"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Cake Mix",
+        tokens: [
+            "Cake Mix"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Cereal",
+        tokens: [
+            "Cereal"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Cocoa",
+        tokens: [
+            "Cocoa"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Cornstarch",
+        tokens: [
+            "Cornstarch"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Flour",
+        tokens: [
+            "Flour"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Jello",
+        tokens: [
+            "Jello"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Oatmeal",
+        tokens: [
+            "Oatmeal"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Pancake Mix",
+        tokens: [
+            "Pancake Mix"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Rice",
+        tokens: [
+            "Rice"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Sugar",
+        tokens: [
+            "Sugar"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Packaged",
+        value: "Vanilla Extract",
+        tokens: [
+            "Vanilla Extract"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Items",
+        value: "Diapers",
+        tokens: [
+            "Diapers"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Items",
+        value: "Formula",
+        tokens: [
+            "Formula"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Items",
+        value: "Lotion",
+        tokens: [
+            "Lotion"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Items",
+        value: "Oil",
+        tokens: [
+            "Oil"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Items",
+        value: "Rash Cream",
+        tokens: [
+            "Rash Cream"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Items",
+        value: "Shampoo",
+        tokens: [
+            "Shampoo"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Items",
+        value: "Wipes",
+        tokens: [
+            "Wipes"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Apple Juice",
+        tokens: [
+            "Apple Juice"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Applesauce",
+        tokens: [
+            "Applesauce"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Bananas",
+        tokens: [
+            "Bananas"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Beef",
+        tokens: [
+            "Beef"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Carrots",
+        tokens: [
+            "Carrots"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Chicken",
+        tokens: [
+            "Chicken"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Dinners",
+        tokens: [
+            "Dinners"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Greenbeans",
+        tokens: [
+            "Greenbeans"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Mixed Veg.",
+        tokens: [
+            "Mixed Veg."
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Peaches",
+        tokens: [
+            "Peaches"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Pears",
+        tokens: [
+            "Pears"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Squash",
+        tokens: [
+            "Squash"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Sweet Potato",
+        tokens: [
+            "Sweet Potato"
+        ]
+    },
+    {
+        group: "Other",
+        subGroup: "Baby Food",
+        value: "Veal",
+        tokens: [
+            "Veal"
+        ]
+    }
+]
