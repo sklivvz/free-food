@@ -4,28 +4,34 @@
 }
 <link href="~/css/font-awesome.css" rel="stylesheet" />
 <h2>Donate Food</h2>
-<div >
-    <div style="float:left;margin-left:5px;width: 90px;"><input type="number" id="item_quantity" value="1" min="1" max="999" /></div>
-    <div style="float:left;margin-left:5px;width: 500px;"><input style="width: 500px;" type="text" id="item_name" placeholder="Item name..." /></div>
-    <div style="float:left;margin-left:5px;"><input style="margin-top:0" type="button" id="add_item" disabled="disabled" value="Add" /></div>
+<div>
+    <div style="float: left; margin-left: 5px; width: 90px;">
+        <input type="number" id="item_quantity" value="1" min="1" max="999" /></div>
+    <div style="float: left; margin-left: 5px; width: 500px;">
+        <input style="width: 500px;" type="text" id="item_name" placeholder="Item name..." /></div>
+    <div style="float: left; margin-left: 5px;">
+        <input style="margin-top: 0" type="button" id="add_item" disabled="disabled" value="Add" /></div>
 </div>
-<div id="items_container" style="clear:both;"></div>
+<div id="items_container" style="clear: both;"></div>
+<div style="clear: both;">
+    <div><input style="margin-top: 0" type="button" id="submit_donations" disabled="disabled" value="Submit" /></div>
+</div>
 <script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
 <script type="text/javascript" src="~/Scripts/typeahead.js"></script>
 <script type="text/javascript" src="~/Scripts/hogan-2.0.0.js"></script>
 
 <script type="text/html" id="row-template">
-    <div class="row" style="clear:both;font-family: RobotoCondensed;">
-        <div style="float:left;margin-left:5px;width: 90px;" class="first-column"></div>
-        <div style="float:left;margin-left:5px;width: 500px;" class="second-column"></div>
-        <div style="float:left;margin-left:5px;width: 90px;" class="third-column"></div>
+    <div class="row" style="clear: both; font-family: RobotoCondensed;">
+        <div style="float: left; margin-left: 5px; width: 90px;" class="first-column"></div>
+        <div style="float: left; margin-left: 5px; width: 500px;" class="second-column"></div>
+        <div style="float: left; margin-left: 5px; width: 90px;" class="third-column"></div>
     </div>
 </script>
 <script type="text/html" id="item-template">
-    <div style="background-color: white; width:500px;font-family: RobotoCondensed;">
+    <div style="background-color: white; width: 500px; font-family: RobotoCondensed;">
         <div style="font-size: x-small; float: right">{{Group}}</div>
         <div style="font-size: x-small; float: left">{{SubGroup}}</div>
-        <div style="clear:both">{{value}}</div>
+        <div style="clear: both">{{value}}</div>
     </div>
 </script>
 
@@ -39,17 +45,27 @@
         $("#item_name").typeahead('setQuery', '');
     }
 
-    function removeItem() {
-        $(this).parents("div.row").remove();
+    function validateSubmit() {
+        if ($("#items_container").find('div').length === 0) {
+            $("#submit_donations").attr('disabled', 'disabled');
+        } else {
+            $("#submit_donations").removeAttr('disabled');
+        }
     }
 
-    function submit() {
+    function removeItem() {
+        $(this).parents("div.row").remove();
+        validateSubmit();
+    }
+
+    function addItem() {
         var $tpl = $($("#row-template").html());
         $tpl.find(".first-column").append($("#item_quantity").val());
         $tpl.find(".second-column").append($("#item_name").val());
         $tpl.find(".third-column").append($("<div style='text-align:center'><i class='icon-remove-sign'></i><div>").click(removeItem));
         $("#items_container").append($tpl);
         clearInput();
+        validateSubmit();
     }
 
     $("#item_name").change(function () {
@@ -62,10 +78,15 @@
 
     $(".remove-item").click(function () {
         $(this).remove();
+        validateSubmit();
     });
 
 
-    $("#add_item").click(submit);
+    $("#add_item").click(addItem);
+
+    $("#submit_donations").click(function() {
+        $("div.row").remove();
+    });
 
     var itemTemplate = $("#item-template").html();
     $('#item_name').typeahead({
