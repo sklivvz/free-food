@@ -102,8 +102,9 @@
             url: 'Submit',
             data: JSON.stringify(donations),
             contentType: 'application/json; charset=utf-8',
-            success: function (data) {
+            complete: function (a,b) {
                 $("div.row").remove();
+                
             },
             dataType: "json"
         });
