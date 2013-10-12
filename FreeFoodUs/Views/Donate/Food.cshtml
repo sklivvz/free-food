@@ -2,5 +2,18 @@
 @{
     ViewBag.Title = "title";
 }
-<h2>title</h2>
-<input type="text" name="item_name" placeholder="Item name..."/><input type="submit"/>
+
+<h2>Donate Food</h2>
+<ul id="items_container"></ul>
+<input type="text" id="item_name" placeholder="Item name..." />
+<input type="number" id="item_quantity" value="1" />
+<input type="submit" id="add_item"/>
+
+<script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
+<script type="text/javascript">
+
+    $("#add_item").click(function () {
+        $("#items_container").append('<li>' + $("#item_name").val() + ' - ' + $("#item_quantity").val() + '</li>');
+    });
+
+</script>
