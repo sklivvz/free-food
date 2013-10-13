@@ -6,18 +6,15 @@ namespace FreeFoodUs.Controllers
 {
     public class FoodController : Controller
     {
-        //
-        // GET: /Food/
-
         public ActionResult Index()
         {
-            return View(FoodStock.All());
+            return View();
         }
 
         [HttpPost]
         public ActionResult Finder(int people, int meals)
         {
-            var results = MealComposer.CountMeals(people, meals);
+            var results = MealComposer.LocationsWithMeals(people, meals);
             return View(new FinderModel {Results = results});
         }
 
