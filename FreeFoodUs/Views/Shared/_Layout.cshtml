@@ -30,8 +30,8 @@
                     <img src="/img/logo@2x.png" alt="Free Food" /></a>
                 <nav id="nav-wrap">
                     <ul class="nav" id="nav">
-                        <li class="nav-parent"><a class="active" href="/">Home</a></li>
-                        <li class="nav-parent"><a href="#">Donate</a>
+                        <li class="nav-parent"><a class="@(ViewBag.Nav=="home"?"active":"")" href="/">Home</a></li>
+                        <li class="nav-parent"><a class="@(ViewBag.Nav=="donate"?"active":"")" href="#">Donate</a>
                             <ul>
                                 <li><a href="/donate/">Buy a meal</a></li>
                                 <li><a href="/donate/food">Supermarkets</a></li>
@@ -39,7 +39,7 @@
                                 <li><a href="/donate/volunteer">Volunteer</a></li>
                             </ul>
                         </li>
-                        <li class="last donate"><a href="/food">Get Food</a></li>
+                        <li class="last donate"><a class="@(ViewBag.Nav=="food"?"active":"")" href="/food">Get Food</a></li>
                     </ul>
                 </nav>
             </header>
