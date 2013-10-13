@@ -41,6 +41,25 @@ namespace FreeFoodUs.Models
 FROM FoodStock join Providers on Providers.Id = FoodStock.ProviderId").ToList();
             }
         }
+
+        public static List<FoodStock> Acquire(int id, int people, int meals)
+        {
+            //TODO: Optimize variety
+            return Acquire(id, people*meals);
+        }
+
+        public static List<FoodStock> Acquire(int id, int available)
+        {
+            var res = new List<FoodStock>();
+            for (var i = 0; i < available; i++)
+            {
+                var m = Meal.Use(id);
+                res.Add(m.Carb);
+                res.Add(m.Protein);
+                res.Add(m.Veggie);
+            }
+            return res;
+        }
     }
 
 }

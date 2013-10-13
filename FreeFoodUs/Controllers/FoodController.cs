@@ -20,13 +20,15 @@ namespace FreeFoodUs.Controllers
 
         public ActionResult Acquire(int id, int people, int meals)
         {
-            var res = MealComposer.TransactLocation(id, people, meals);
+            var user = Session["User"] as User;
+            if (user == null) return HttpNotFound();
+            var res = MealComposer.TransactLocation(id, people, meals, user.Id);
             if (!res.Success)
             {
                 return View("~/Views/Shared/Plain.cshtml",
-                    new PlainModel {Title = "Oh, noes!", Text = "Something went wrong: " + res.Reason});
+                    new PlainModel { Title = "Oh, noes!", Text = "Something went wrong: " + res.Reason });
             }
-            return HttpNotFound();
+            return View(res.Order);
         }
     }
 }
