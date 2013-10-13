@@ -38,9 +38,9 @@
     </div>
 </script>
 <script type="text/html" id="item-template">
-    <div style="background-color: white; width: 500px; font-family: RobotoCondensed;">
-        <div style="font-size: x-small; float: right">{{Group}}</div>
-        <div style="font-size: x-small; float: left">{{SubGroup}}</div>
+    <div style="background-color: white; width: 500px; font-family: RobotoCondensed; padding:5px;">
+        <div style="font-size: x-small; float: right">{{group}}</div>
+        <div style="font-size: x-small; float: left">{{subGroup}}</div>
         <div style="clear: both">{{value}}</div>
     </div>
 </script>
@@ -96,7 +96,7 @@
     $("#add_item").click(addItem);
 
     function toFoodGroup(data) {
-        var subGroup = data.SubGroup.toLocaleLowerCase();
+        var subGroup = data.subGroup.toLocaleLowerCase();
         if (subGroup.indexOf("meat") != -1)
             return 2;
         if (subGroup.indexOf("fruit") != -1)
@@ -135,7 +135,8 @@
         prefetch: '/donate/foodlist',
         limit: 5,
         template: itemTemplate,
-        engine: Hogan
+        engine: Hogan,
+        ttl:1,
     }).bind('typeahead:selected', function (obj, datum) {
         selectedDatum = datum;
     });
