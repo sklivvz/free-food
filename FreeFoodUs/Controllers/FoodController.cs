@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using FreeFoodUs.Models;
+using FreeFoodUs.Views.Food;
 
 namespace FreeFoodUs.Controllers
 {
@@ -15,6 +12,13 @@ namespace FreeFoodUs.Controllers
         public ActionResult Index()
         {
             return View(FoodStock.All());
+        }
+
+        [HttpPost]
+        public ActionResult Finder(int people, int meals)
+        {
+            var results = MealComposer.GenerateMealOptions(people, meals);
+            return View(new FinderModel {Results = results});
         }
 
     }

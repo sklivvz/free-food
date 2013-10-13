@@ -122,6 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\DonateController.cs" />
+    <Compile Include="Models\Meal.cs" />
+    <Compile Include="Models\MealComposer.cs" />
+    <Compile Include="Models\PaypalTransaction.cs" />
+    <Compile Include="Views\Food\FinderModel.cs">
+      <DependentUpon>Finder.cshtml</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -212,6 +218,7 @@
     <Content Include="Views\Donate\Submit.cshtml" />
     <Content Include="Views\Donate\Restaurants.cshtml" />
     <Content Include="Views\Shared\Plain.cshtml" />
+    <Content Include="Views\Food\Finder.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

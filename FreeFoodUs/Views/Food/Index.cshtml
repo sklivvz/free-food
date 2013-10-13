@@ -4,15 +4,10 @@
     ViewBag.Title = "food";
 }
 
-<h2>food available</h2>
-@if (Model.Any())
-{
-    foreach (var f in Model)
-    {
-        <li>@f.Number @f.Name</li>
-    }
-}
-else
-{
-    @:Nothing yet
-}
+<h1>Hello Friend!</h1>
+<p>Tell us more about your needs and we'll see what we can do.</p>
+<form action="/food/finder" method="post">
+    <label for="people">People that need a meal</label><input type="number" name="people" value="2" /><br />
+    <label for="meals">Number of meals</label><input type="number" name="meals" value="1" /><br />
+    <input type="submit" value="Find free food" />
+</form>
