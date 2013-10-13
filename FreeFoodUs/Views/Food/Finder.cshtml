@@ -10,7 +10,6 @@
     <ul>
         @foreach (var p in Model.Results)
         {
-
             <li><a href="/food/acquire?id=@p.Id&people=@Model.People&meals=@Model.Meals"><span style="display: inline-block;width:100px"><img src="@p.ImageUrl" style="max-height: 25px;max-width: 90px"/></span> @p.Name</a></li>
         }
     </ul>

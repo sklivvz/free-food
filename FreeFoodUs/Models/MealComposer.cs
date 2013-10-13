@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Device.Location;
 using System.Linq;
 
 namespace FreeFoodUs.Models
@@ -7,9 +8,15 @@ namespace FreeFoodUs.Models
 
     public class MealComposer
     {
-        public static List<Provider> LocationsWithMeals(int people, int meals)
+        public static List<Provider> LocationsWithMeals(int people, int meals, float lat, float lng)
         {
-            return Provider.All().Where(loc => HazCheeseburger(loc.Id, people, meals)).ToList();
+            var receipientLocation = new GeoCoordinate(lat, lng);
+            return Provider.All().Where(loc => HazCheeseburger(loc.Id, people, meals)).OrderBy(p =>
+                {
+                    var providerLocation = new GeoCoordinate(p.Lat, p.Lng);
+                    var ms = providerLocation.GetDistanceTo(receipientLocation);
+                    return ms;
+                }).ToList();
         }
 
         private static bool HazCheeseburger(int id, int people, int meals)
@@ -44,5 +51,7 @@ namespace FreeFoodUs.Models
             public bool Success { get; set; }
             public string Reason { get; set; }
         }
+
+
     }
 }

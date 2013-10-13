@@ -1,7 +1,11 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Linq;
+using System.Net;
+using System.Web.Mvc;
 using FreeFoodUs.Models;
 using FreeFoodUs.Views.Food;
 using FreeFoodUs.Views.Shared;
+using Newtonsoft.Json.Linq;
 
 namespace FreeFoodUs.Controllers
 {
@@ -15,7 +19,22 @@ namespace FreeFoodUs.Controllers
         [HttpPost]
         public ActionResult Finder(int people, int meals, string postcode)
         {
-            return View(new FinderModel { Results = MealComposer.LocationsWithMeals(people, meals), Meals = meals, People = people });
+            try
+            {
+                postcode = postcode.Replace(" ", "");
+                var url = @"http://uk-postcodes.com/postcode/" + postcode + ".json";
+                var webClient = new WebClient();
+                var geoJson = webClient.DownloadString(url);
+                dynamic geo = JObject.Parse(geoJson);
+                var lat = float.Parse(geo.geo.lat.ToString());
+                var lng = float.Parse(geo.geo.lng.ToString());
+                return View(new FinderModel { Results = MealComposer.LocationsWithMeals(people, meals, lat, lng), Meals = meals, People = people });
+            }
+            catch (Exception)
+            {
+                return View("~/Views/Shared/Plain.cshtml", new PlainModel { Title = "Failed to look up location", Text = "Probably caused by the crappy Wifi re-direct page." });
+            }
+
         }
 
         public ActionResult Acquire(int id, int people, int meals)
