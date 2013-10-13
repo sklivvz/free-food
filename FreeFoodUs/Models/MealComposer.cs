@@ -11,12 +11,9 @@ namespace FreeFoodUs.Models
         public static List<Provider> LocationsWithMeals(int people, int meals, float lat, float lng)
         {
             var receipientLocation = new GeoCoordinate(lat, lng);
-            return Provider.All().Where(loc => HazCheeseburger(loc.Id, people, meals)).OrderBy(p =>
-                {
-                    var providerLocation = new GeoCoordinate(p.Lat, p.Lng);
-                    var ms = providerLocation.GetDistanceTo(receipientLocation);
-                    return ms;
-                }).ToList();
+            return Provider.All().
+                Where(loc => HazCheeseburger(loc.Id, people, meals)).
+                OrderBy(p => p.DistanceTo(receipientLocation)).ToList();
         }
 
         private static bool HazCheeseburger(int id, int people, int meals)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Device.Location;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
@@ -28,11 +29,22 @@ namespace FreeFoodUs.Controllers
                 dynamic geo = JObject.Parse(geoJson);
                 var lat = float.Parse(geo.geo.lat.ToString());
                 var lng = float.Parse(geo.geo.lng.ToString());
-                return View(new FinderModel { Results = MealComposer.LocationsWithMeals(people, meals, lat, lng), Meals = meals, People = people });
+                return View(new FinderModel
+                    {
+                        Results = MealComposer.LocationsWithMeals(people, meals, lat, lng), 
+                        Meals = meals, 
+                        People = people,
+                        SearchLocation = new GeoCoordinate(lat, lng)
+                    });
             }
             catch (Exception)
             {
-                return View("~/Views/Shared/Plain.cshtml", new PlainModel { Title = "Failed to look up location", Text = "Probably caused by the crappy Wifi re-direct page." });
+                return View("~/Views/Shared/Plain.cshtml", 
+                    new PlainModel
+                        {
+                            Title = "Failed to look up location", 
+                            Text = "Probably caused by the crappy Wifi re-direct page."
+                        });
             }
 
         }
