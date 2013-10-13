@@ -4,4 +4,18 @@
     ViewBag.Nav = "food";
 
 }
-We have @Model.Results meals available. Happy?
+@if (Model.Results.Any())
+{
+    <h1>@Model.Results.Count results!</h1>
+    <ul>
+        @foreach (var p in Model.Results)
+        {
+            <li><a href="/food/acquire?id=@p.Id">@p.Name</a></li>
+        }
+    </ul>
+}
+else
+{
+    <h1>Sorry, we can't help :-(</h1>
+    <p>There seem to be no food available for now... come back later!</p>
+}
