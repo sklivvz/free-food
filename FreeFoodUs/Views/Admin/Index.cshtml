@@ -1,0 +1,13 @@
+﻿@model FreeFoodUs.Views.Admin.AdminModel
+@{
+    ViewBag.Title = "Administration";
+}
+<h1>Current Assets</h1>
+Money in the bank: £@Model.MoneyInTheBank <br/>
+<a href="/admin/cash">More info &raquo;</a><br/>
+Food Pledged: equivalent to £@Model.FoodMoney<br/>
+<a href="/admin/food">More info &raquo;</a><br/>
+<h2>Other Statistics</h2>
+Users: @Model.Users<br/>
+Providers: @Model.Providers<br/>
+<a href="/actors/impersonate">Impersonate &raquo;</a>

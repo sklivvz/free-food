@@ -14,4 +14,6 @@ BEGIN
 	Id
 	) WITH( STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 
+	EXEC sp_executesql N'insert into users (name) values (N''T Bone Slim''), (N''Utah Phillips''), (N''Alexander Supertramp''), (N''William Shatner'')'
+
 END

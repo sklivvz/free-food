@@ -1,6 +1,7 @@
 IF (NOT EXISTS (SELECT * 
                  FROM INFORMATION_SCHEMA.COLUMNS
                  WHERE TABLE_SCHEMA = 'dbo' 
+				 AND TABLE_NAME = 'Providers'
 				 AND COLUMN_NAME = 'ImageUrl'))
 BEGIN
 	TRUNCATE TABLE dbo.FoodStock
