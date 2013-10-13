@@ -22,13 +22,15 @@ namespace FreeFoodUs.Controllers
         {
             try
             {
-                postcode = postcode.Replace(" ", "");
+                /*postcode = postcode.Replace(" ", "");
                 var url = @"http://uk-postcodes.com/postcode/" + postcode + ".json";
                 var webClient = new WebClient();
                 var geoJson = webClient.DownloadString(url);
                 dynamic geo = JObject.Parse(geoJson);
                 var lat = float.Parse(geo.geo.lat.ToString());
-                var lng = float.Parse(geo.geo.lng.ToString());
+                var lng = float.Parse(geo.geo.lng.ToString());*/
+                var lat = 51.289902f;
+                var lng = 0.165248f;
                 return View(new FinderModel
                     {
                         Results = MealComposer.LocationsWithMeals(people, meals, lat, lng), 
