@@ -96,7 +96,7 @@
     $("#add_item").click(addItem);
 
     function toFoodGroup(data) {
-        var subGroup = data.SubGroup.toLocaleLowerCase();
+        var subGroup = data.subGroup.toLocaleLowerCase();
         if (subGroup.indexOf("meat") != -1)
             return 2;
         if (subGroup.indexOf("fruit") != -1)
