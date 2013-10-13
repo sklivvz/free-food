@@ -12,7 +12,7 @@ namespace FreeFoodUs.Controllers
         }
 
         [HttpPost]
-        public ActionResult Finder(int people, int meals)
+        public ActionResult Finder(int people, int meals, string postcode)
         {
             var results = MealComposer.LocationsWithMeals(people, meals);
             return View(new FinderModel {Results = results});
