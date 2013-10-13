@@ -18,5 +18,9 @@ namespace FreeFoodUs.Controllers
             return View(new FinderModel {Results = results});
         }
 
+        public ActionResult Acquire(int id)
+        {
+            return HttpNotFound();
+        }
     }
 }
