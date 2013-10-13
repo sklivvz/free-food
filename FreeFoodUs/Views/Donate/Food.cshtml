@@ -42,6 +42,8 @@
 
 
 <script type="text/javascript">
+    var selectedDatum = {};
+    var donations = {};
 
     function clearInput() {
         $("#item_name").val("");
@@ -69,6 +71,7 @@
         $tpl.find(".second-column").append($("#item_name").val());
         $tpl.find(".third-column").append($("<div style='text-align:center'><i class='icon-remove-sign'></i><div>").click(removeItem));
         $("#items_container").append($tpl);
+        donations[$("#item_name").val()] = selectedDatum;
         clearInput();
         validateSubmit();
     }
@@ -87,22 +90,35 @@
 
     $("#add_item").click(addItem);
 
+    function toFoodGroup(data) {
+        var subGroup = data.SubGroup.toLocaleLowerCase();
+        if (subGroup.indexOf("meat") != -1)
+            return 2;
+        if (subGroup.indexOf("fruit") != -1)
+            return 3;
+        if (subGroup.indexOf("vege") != -1)
+            return 3;
+        return 1;
+    }
     $("#submit_donations").click(function () {
         $("#submit_donations").attr('disabled', 'disabled');
-        var donations = [];
+        
+        var d = [];
         $("#items_container").find(".row").each(function (index, el) {
-
-            donations.push({
-                Name: $(el).find('.second-column').text(),
-                Number: $(el).find('.first-column').text()
+            var itemName = $(el).find('.second-column').text();
+            d.push({
+                Name: itemName,
+                Number: $(el).find('.first-column').text(),
+                FoodGroup: toFoodGroup(donations[itemName])
             });
         });
+
         $.ajax({
             type: "POST",
             url: 'Submit',
-            data: JSON.stringify(donations),
+            data: JSON.stringify(d),
             contentType: 'application/json; charset=utf-8',
-            success: function(data, textStatus, xhr) {
+            success: function (data, textStatus, xhr) {
                 $('body').html(data);
             }
         });
@@ -115,6 +131,8 @@
         limit: 5,
         template: itemTemplate,
         engine: Hogan
+    }).bind('typeahead:selected', function (obj, datum) {
+        selectedDatum = datum;
     });
 
 </script>
