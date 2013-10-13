@@ -2,6 +2,8 @@
 @model List<FreeFoodUs.Models.Provider>
 @{
     ViewBag.Title = "Impersonate someone";
+    ViewBag.Nav = "home";
+
     var prov = Session["Provider"] as Provider;
     var user = Session["User"];
 }
