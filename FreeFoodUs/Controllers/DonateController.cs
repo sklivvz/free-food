@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net;
-using System.Net.Mime;
-using System.Web;
 using System.Web.Mvc;
 using FreeFoodUs.Models;
 using FreeFoodUs.Views.Shared;
-using PayPal.Api.Payments;
 
 namespace FreeFoodUs.Controllers
 {
@@ -41,26 +36,27 @@ namespace FreeFoodUs.Controllers
             {
                 foodStock.Upsert();
             }
-            return View();
+            return View("~/Views/Shared/Plain.cshtml", new PlainModel { Title = "Thank you!", Text = "Thank you for donating to the food bank." });
+
         }
 
         public ActionResult Pay(string what)
         {
-            WebRequest.DefaultWebProxy = new WebProxy("127.0.0.1", 8888);
+            //WebRequest.DefaultWebProxy = new WebProxy("127.0.0.1", 8888);
             var basehost = new Uri(ControllerContext.RequestContext.HttpContext.Request.Url, "/");
             Tuple<string, string, PaypalTransaction> tuple;
+            string okUrl = basehost + "donate/success";
+            string failUrl = basehost + "donate/fail";
             switch (what)
             {
                 case "meal":
-                    tuple = PayPalFacade.Pay(10.0m, "A Meal", basehost + "donate/success", basehost + "donate/fail");
+                    tuple = PayPalFacade.Pay(10.0m, "A meal", okUrl, failUrl);
                     break;
                 case "week":
-                    tuple = PayPalFacade.Pay(100.0m, "A Week of Food", basehost + "donate/success",
-                        basehost + "donate/fail");
+                    tuple = PayPalFacade.Pay(100.0m, "A week of food", okUrl, failUrl);
                     break;
                 case "xmas":
-                    tuple = PayPalFacade.Pay(150.0m, "A Christmas Meal", basehost + "donate/success",
-                        basehost + "donate/fail");
+                    tuple = PayPalFacade.Pay(150.0m, "A Christmas meal", okUrl, failUrl);
                     break;
                 default:
                     return HttpNotFound();
