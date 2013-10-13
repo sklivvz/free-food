@@ -102,11 +102,9 @@
             url: 'Submit',
             data: JSON.stringify(donations),
             contentType: 'application/json; charset=utf-8',
-            complete: function (a,b) {
-                $("div.row").remove();
-                
-            },
-            dataType: "json"
+            success: function(data, textStatus, xhr) {
+                $('body').html(data);
+            }
         });
     });
 

@@ -41,7 +41,7 @@ namespace FreeFoodUs.Controllers
             {
                 foodStock.Upsert();
             }
-            return new JsonResult { Data = "{\"Done\":\"true\"}"};
+            return View();
         }
 
         public ActionResult Pay(string what)
