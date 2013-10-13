@@ -130,6 +130,7 @@
   <ItemGroup>
     <Compile Include="Controllers\ActorsController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Models\BankTransaction.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Views\Admin\AdminModel.cs">
@@ -238,7 +239,9 @@
     <Content Include="Views\Food\Finder.cshtml" />
     <Content Include="Views\Actors\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\Food\Acquire.cshtml" />
+    <Content Include="Views\Order\Get.cshtml" />
+    <Content Include="Views\Order\Provider.cshtml" />
+    <Content Include="Views\Order\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -61,7 +61,7 @@ namespace FreeFoodUs.Controllers
                 return View("~/Views/Shared/Plain.cshtml",
                     new PlainModel { Title = "Oh, noes!", Text = "Something went wrong: " + res.Reason });
             }
-            return View(res.Order);
+            return Redirect("/order/get?id=" + res.Order.Id);
         }
     }
 }
