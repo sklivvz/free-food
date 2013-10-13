@@ -1,9 +1,13 @@
-﻿@model dynamic
+﻿@using FreeFoodUs.Models
+@model dynamic
 @{
     ViewBag.Title = "Donate";
+    var prov = Session["Provider"] as Provider;
+    var user = Session["User"];    
 }
 <link href="~/css/font-awesome.css" rel="stylesheet" />
-<h2>Donate Food</h2>
+<h2>Donate Food @(prov==null?"":"- "+prov.Name)</h2>
+
 <div>
     <div style="float: left; margin-left: 5px; width: 90px;">
         <input type="number" id="item_quantity" value="1" min="1" max="999" />

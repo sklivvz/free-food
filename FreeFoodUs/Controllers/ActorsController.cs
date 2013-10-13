@@ -24,5 +24,11 @@ namespace FreeFoodUs.Controllers
             return Redirect("/actors");
         }
 
+        public ActionResult Clear()
+        {
+            Session["Provider"] = null;
+            Session["User"] = null;
+            return Redirect("/actors");
+        }
     }
 }

@@ -21,6 +21,8 @@ namespace FreeFoodUs.Controllers
 
         public ActionResult Food()
         {
+            if (Session["Provider"] == null)
+                return View("~/Views/Shared/Plain.cshtml", new PlainModel { Title = "Not logged in", Text = "You are not logged in as a food provider. Please log in or contact us for an account." });
             return View();
         }
 
