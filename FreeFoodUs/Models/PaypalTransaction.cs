@@ -25,7 +25,7 @@ namespace FreeFoodUs.Models
         {
             using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Main"].ConnectionString))
             {
-                return connection.Query<decimal>(@"SELECT SUM(Amount) FROM PayPalTransactions").SingleOrDefault();
+                return connection.Query<decimal>(@"SELECT ISNULL(SUM(Amount),0) FROM PayPalTransactions").SingleOrDefault();
             }
         }
     }
