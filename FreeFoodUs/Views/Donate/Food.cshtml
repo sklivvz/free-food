@@ -111,7 +111,7 @@
     var itemTemplate = $("#item-template").html();
     $('#item_name').typeahead({
         name: 'Food',
-        prefetch: '../data/foods.js',
+        prefetch: '/donate/foodlist',
         limit: 5,
         template: itemTemplate,
         engine: Hogan

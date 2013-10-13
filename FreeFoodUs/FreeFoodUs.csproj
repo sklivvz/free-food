@@ -192,7 +192,6 @@
     <Content Include="font\socialico-webfont-webfont.eot" />
     <Content Include="font\socialico-webfont-webfont.ttf" />
     <Content Include="font\socialico-webfont-webfont.woff" />
-    <Content Include="data\foods.js" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="img\logo%402x.png" />
     <Content Include="Scripts\hogan-2.0.0.js" />
