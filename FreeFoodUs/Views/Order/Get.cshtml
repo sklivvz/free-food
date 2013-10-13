@@ -6,6 +6,8 @@
 <h1>Fear not!</h1>
 <h2>Your food is ready for you to pick up</h2>
 
+<div style="padding: 2em; margin: 2em; border-right: solid 2px #666; border-bottom: solid 2px #666; background: gainsboro">
+Id: @Model.Id<br/>
 Name: @(FreeFoodUs.Models.User.All().Single(u=>u.Id==Model.UserId).Name)<br/>
 Location: @(FreeFoodUs.Models.Provider.All().Single(u=>u.Id==Model.ProviderId).Name)<br/>
 <h3>Groceries</h3>
@@ -20,3 +22,4 @@ Location: @(FreeFoodUs.Models.Provider.All().Single(u=>u.Id==Model.ProviderId).N
 <h3>Nuy On Premis</h3>
 <p>Unfortunately it was not possible to for the supermarket to provide your full required set of meals. However, they will provide you with extra groceries of your chois up to a value of @Model.BuyOnPremise.Amount</p>    
 }
+    </div>

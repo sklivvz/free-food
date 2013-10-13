@@ -1,0 +1,21 @@
+﻿@using FreeFoodUs.Models
+@model System.Collections.Generic.List<FreeFoodUs.Models.Order>
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Open Orders for @(((Provider)Session["Provider"]).Name)</h2>
+@if (!Model.Any())
+{
+    <p>There are no orders to be fulfilled right now</p>
+}
+else
+{
+  <ul>
+      @foreach (var o in Model)
+      {
+          <li><a href="/order/get?id=@o.Id">@o.Id - @FreeFoodUs.Models.User.All().Single(u=>u.Id==o.UserId).Name</a></li>
+      }
+  </ul>
+}
