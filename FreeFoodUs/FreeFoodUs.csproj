@@ -52,7 +52,8 @@
     <Reference Include="PayPalCoreSDK">
       <HintPath>..\packages\PayPalCoreSDK.1.3.5\lib\PayPalCoreSDK.dll</HintPath>
     </Reference>
-    <Reference Include="RestApiSDK">
+    <Reference Include="RestApiSDK, Version=0.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\RestApiSDK.0.7.3\lib\RestApiSDK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
