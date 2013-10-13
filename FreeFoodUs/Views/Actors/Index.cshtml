@@ -1,19 +1,27 @@
 ﻿@using FreeFoodUs.Models
-@model List<FreeFoodUs.Models.Provider>
+@model FreeFoodUs.Views.Actors.ActorsModel
 @{
     ViewBag.Title = "Impersonate someone";
     ViewBag.Nav = "home";
 
     var prov = Session["Provider"] as Provider;
-    var user = Session["User"];
+    var user = Session["User"] as User;
 }
-<h2>@ViewBag.Title</h2>
+<h1>@ViewBag.Title</h1>
 You are @(prov==null?"not a provider":"impersonating "+prov.Name)<br/>
-You are @(user==null?"not a user":"impersonating "+user)<br/>
+You are @(user==null?"not a user":"impersonating "+user.Name)<br/>
+<h3>Providers</h3>
 <ul>
-    @foreach (var p in Model)
+    @foreach (var p in Model.Providers)
     {
         <li><a href="/actors/impersonateprovider?id=@p.Id">@p.Name</a></li>
+    }
+</ul>
+<h3>Users</h3>
+<ul>
+    @foreach (var p in Model.Users)
+    {
+        <li><a href="/actors/impersonateuser?id=@p.Id">@p.Name</a></li>
     }
 </ul>
 <a href="actors/clear">Clear</a>

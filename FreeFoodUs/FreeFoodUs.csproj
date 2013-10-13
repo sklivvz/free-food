@@ -122,7 +122,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ActorsController.cs" />
+    <Compile Include="Views\Actors\ActorsModel.cs">
+      <DependentUpon>Index.cshtml</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\DonateController.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\Meal.cs" />
     <Compile Include="Models\MealComposer.cs" />
     <Compile Include="Models\PaypalTransaction.cs" />
