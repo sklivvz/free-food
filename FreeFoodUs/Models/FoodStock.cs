@@ -6,10 +6,15 @@ using Dapper;
 
 namespace FreeFoodUs.Models
 {
+    public enum FoodGroup
+    {
+        Carbs = 1, Proteins = 2, VegAndFruit = 3
+    }
     public class FoodStock
     {
         public int Number { get; set; }
         public string Name { get; set; }
+        public FoodGroup FoodGroup { get; set; }
 
         public void Upsert()
         {
@@ -21,7 +26,7 @@ namespace FreeFoodUs.Models
                     WHEN MATCHED THEN
                     UPDATE SET Target.Number = Target.Number+Source.NewNumber
                     WHEN NOT MATCHED BY TARGET THEN
-                    INSERT (Name, Number) VALUES (@Name, @Number);", this);
+                    INSERT (Name, Number, FoodGroup) VALUES (@Name, @Number, @FoodGroup);", this);
             }
         }
 

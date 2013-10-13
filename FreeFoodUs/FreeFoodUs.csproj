@@ -215,7 +215,6 @@
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Views\Food\Index.cshtml" />
     <Content Include="Views\Donate\Index.cshtml" />
-    <Content Include="Views\Donate\Submit.cshtml" />
     <Content Include="Views\Donate\Restaurants.cshtml" />
     <Content Include="Views\Shared\Plain.cshtml" />
     <Content Include="Views\Food\Finder.cshtml" />
