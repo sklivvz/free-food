@@ -1,0 +1,22 @@
+﻿@model FreeFoodUs.Models.Order
+@{
+    ViewBag.Title = "Success!";
+}
+
+<h1>Fear not!</h1>
+<h2>Your food is ready for you to pick up</h2>
+
+Name: @(FreeFoodUs.Models.User.All().Single(u=>u.Id==Model.UserId).Name)<br/>
+Location: @(FreeFoodUs.Models.Provider.All().Single(u=>u.Id==Model.ProviderId).Name)<br/>
+<h3>Groceries</h3>
+<ul>
+    @foreach (var food in Model.Food.OrderBy(f=>f.FoodGroup).ThenBy(f=>f.Name).GroupBy(f => f.Name,f=>f.Number))
+    {
+        <li><div style="width:50px; display: inline-block">@food.Sum()</div>@food.Key</li>
+    }
+</ul>
+@if (Model.BuyOnPremise != null)
+{
+<h3>Nuy On Premis</h3>
+<p>Unfortunately it was not possible to for the supermarket to provide your full required set of meals. However, they will provide you with extra groceries of your chois up to a value of @Model.BuyOnPremise.Amount</p>    
+}

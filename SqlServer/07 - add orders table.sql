@@ -1,0 +1,24 @@
+IF (NOT EXISTS (SELECT * 
+                 FROM INFORMATION_SCHEMA.TABLES
+                 WHERE TABLE_SCHEMA = 'dbo' 
+				 AND TABLE_NAME = 'Orders'))
+BEGIN
+	CREATE TABLE Orders
+	(
+		Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		JsonBody NVARCHAR(MAX) NOT NULL,
+		[Date] DATETIME NOT NULL,
+		UserId INT NOT NULL,
+		ProviderId INT NOT NULL
+	)
+
+	ALTER TABLE dbo.Orders 
+	ADD CONSTRAINT FK_Orders_Providers
+	FOREIGN KEY (ProviderId)
+	REFERENCES Providers(Id)
+
+	ALTER TABLE dbo.Orders 
+	ADD CONSTRAINT FK_Orders_Users
+	FOREIGN KEY (UserId)
+	REFERENCES Users(Id)
+END

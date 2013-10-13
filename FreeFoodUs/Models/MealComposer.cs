@@ -21,17 +21,8 @@ namespace FreeFoodUs.Models
 
         private static bool HazCheeseburger(int id, int people, int meals)
         {
-            int carbs = FoodStock.All().Where(f => f.ProviderId == id && f.FoodGroup == FoodGroup.Carbs).Sum(f => f.Number);
-            int proteins = FoodStock.All().Where(f => f.ProviderId == id && f.FoodGroup == FoodGroup.Proteins).Sum(f => f.Number);
-            int veggies = FoodStock.All().Where(f => f.ProviderId == id && f.FoodGroup == FoodGroup.VegAndFruit).Sum(f => f.Number);
-
             var needed = people * meals;
-            var available = new[]
-            {
-                carbs,
-                proteins,
-                veggies,
-            }.Min();
+            var available = Availability(id);
 
             if (needed <= available) return true;
             if (available * 100 / needed < 80) return false;
@@ -41,15 +32,58 @@ namespace FreeFoodUs.Models
             return buyableMeals >= needed - available;
         }
 
-        public static AcquireResult TransactLocation(int id, int people, int meals)
+        private static int Availability(int id)
         {
-            return new AcquireResult { Success = false, Reason = "Method not implemented, bitch!" };
+            int carbs = FoodStock.All().Where(f => f.ProviderId == id && f.FoodGroup == FoodGroup.Carbs).Sum(f => f.Number);
+            int proteins = FoodStock.All()
+                .Where(f => f.ProviderId == id && f.FoodGroup == FoodGroup.Proteins)
+                .Sum(f => f.Number);
+            int veggies =
+                FoodStock.All().Where(f => f.ProviderId == id && f.FoodGroup == FoodGroup.VegAndFruit).Sum(f => f.Number);
+
+            var available = new[]
+            {
+                carbs,
+                proteins,
+                veggies,
+            }.Min();
+            return available;
+        }
+
+        public static AcquireResult TransactLocation(int id, int people, int meals, int userId)
+        {
+            var needed = people * meals;
+            var available = Availability(id);
+
+            if (needed <= available)
+            {
+                List<FoodStock> acq = FoodStock.Acquire(id, people, meals);
+                var order = new Order { ProviderId = id, UserId = userId, Food = acq };
+                order.Execute();
+                return new AcquireResult { Success = true, Order = order };
+            }
+
+            if (available * 100 / needed < 80)
+                return new AcquireResult { Success = false, Reason = "There is too little food left at this provider." };
+
+            var buyableMeals = (int)Math.Floor(PaypalTransaction.Balance() / 3m);
+            if (buyableMeals >= needed - available)
+            {
+                List<FoodStock> acq = FoodStock.Acquire(id, available);
+                var tran = new BankTransaction { Amount = (needed - available) * 3m, Premise = id, UserId = userId };
+                tran.Execute();
+                var order = new Order { ProviderId = id, UserId = userId, Food = acq, BuyOnPremise = tran };
+                order.Execute();
+                return new AcquireResult { Success = true, Order = order};
+            }
+            return new AcquireResult { Success = false, Reason = "There is too little food left at this provider." };
         }
 
         public class AcquireResult
         {
             public bool Success { get; set; }
             public string Reason { get; set; }
+            public Order Order { get; set; }
         }
 
 
