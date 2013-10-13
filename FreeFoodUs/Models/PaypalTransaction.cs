@@ -21,7 +21,7 @@ namespace FreeFoodUs.Models
             }
         }
 
-        public decimal Balance()
+        public static decimal Balance()
         {
             using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Main"].ConnectionString))
             {

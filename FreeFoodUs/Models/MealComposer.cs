@@ -1,13 +1,22 @@
-﻿using System.Collections.Generic;
-using FreeFoodUs.Controllers;
+﻿using System.Linq;
 
 namespace FreeFoodUs.Models
 {
+
     public class MealComposer
     {
-        public static List<Meal> GenerateMealOptions(int people, int meals)
+        public static bool CountMeals(int people, int meals)
         {
-            return new List<Meal>();
+            int carbs = FoodStock.All().Where(f => f.FoodGroup == FoodGroup.Carbs).Sum(f=>f.Number);
+            int proteins = FoodStock.All().Where(f => f.FoodGroup == FoodGroup.Proteins).Sum(f=>f.Number);
+            int veggies = FoodStock.All().Where(f => f.FoodGroup == FoodGroup.VegAndFruit).Sum(f=>f.Number);
+            return (new[]
+            {
+                carbs,
+                proteins,
+                veggies,
+            }.Min() / people + (int)(PaypalTransaction.Balance() / (people * 3m)))/meals > 0;
         }
+   
     }
 }

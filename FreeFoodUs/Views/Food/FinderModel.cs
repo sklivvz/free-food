@@ -6,6 +6,6 @@ namespace FreeFoodUs.Views.Food
 {
     public class FinderModel
     {
-        public List<Meal> Results { get; set; }
+        public bool Results { get; set; }
     }
 }

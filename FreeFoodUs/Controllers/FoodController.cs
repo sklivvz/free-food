@@ -17,7 +17,7 @@ namespace FreeFoodUs.Controllers
         [HttpPost]
         public ActionResult Finder(int people, int meals)
         {
-            var results = MealComposer.GenerateMealOptions(people, meals);
+            var results = MealComposer.CountMeals(people, meals);
             return View(new FinderModel {Results = results});
         }
 

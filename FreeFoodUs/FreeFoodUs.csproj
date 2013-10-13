@@ -121,10 +121,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ActorsController.cs" />
     <Compile Include="Controllers\DonateController.cs" />
     <Compile Include="Models\Meal.cs" />
     <Compile Include="Models\MealComposer.cs" />
     <Compile Include="Models\PaypalTransaction.cs" />
+    <Compile Include="Models\Provider.cs" />
     <Compile Include="Views\Food\FinderModel.cs">
       <DependentUpon>Finder.cshtml</DependentUpon>
     </Compile>
@@ -217,6 +219,7 @@
     <Content Include="Views\Donate\Restaurants.cshtml" />
     <Content Include="Views\Shared\Plain.cshtml" />
     <Content Include="Views\Food\Finder.cshtml" />
+    <Content Include="Views\Actors\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

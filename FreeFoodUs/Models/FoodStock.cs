@@ -12,9 +12,12 @@ namespace FreeFoodUs.Models
     }
     public class FoodStock
     {
+        public int Id { get; set; }
         public int Number { get; set; }
         public string Name { get; set; }
         public FoodGroup FoodGroup { get; set; }
+        public int ProviderId { get; set; }
+        public string ProviderName { get; set; }
 
         public void Upsert()
         {
@@ -22,11 +25,11 @@ namespace FreeFoodUs.Models
             {
                 connection.Execute(
                     @"MERGE INTO FoodStock AS Target 
-                    USING (VALUES (@Number, @Name)) AS Source (NewNumber, Name) ON Target.Name = Source.Name
+                    USING (VALUES (@Number, @Name, @ProviderId)) AS Source (NewNumber, Name, ProviderId) ON Target.Name = Source.Name AND Target.ProviderId = Source.ProviderId
                     WHEN MATCHED THEN
                     UPDATE SET Target.Number = Target.Number+Source.NewNumber
                     WHEN NOT MATCHED BY TARGET THEN
-                    INSERT (Name, Number, FoodGroup) VALUES (@Name, @Number, @FoodGroup);", this);
+                    INSERT (Name, Number, FoodGroup, ProviderId) VALUES (@Name, @Number, @FoodGroup, @ProviderId);", this);
             }
         }
 
@@ -34,7 +37,8 @@ namespace FreeFoodUs.Models
         {
             using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Main"].ConnectionString))
             {
-                return connection.Query<FoodStock>(@"SELECT * FROM FoodStock").ToList();
+                return connection.Query<FoodStock>(@"SELECT FoodStock.*, Providers.Name as ProviderName 
+FROM FoodStock join Providers on Providers.Id = FoodStock.ProviderId").ToList();
             }
         }
     }

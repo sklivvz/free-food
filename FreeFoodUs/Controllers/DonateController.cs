@@ -38,8 +38,12 @@ namespace FreeFoodUs.Controllers
         [HttpPost]
         public ActionResult Submit(List<FoodStock> donation)
         {
+            var prov = Session["Provider"] as Provider;
+            if (prov == null) return HttpNotFound();
+
             foreach (var foodStock in donation)
             {
+                foodStock.ProviderId = prov.Id;
                 foodStock.Upsert();
             }
             return View("~/Views/Shared/Plain.cshtml", new PlainModel { Title = "Thank you!", Text = "Thank you for donating to the food bank." });
