@@ -1,4 +1,3 @@
-free-food.us
-============
+## free-food.us
 
-A free food bank for #battlehack
+A fully functional food bank built in an evening for Battle Hack London 2013.
